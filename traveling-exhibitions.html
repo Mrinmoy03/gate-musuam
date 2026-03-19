@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore the traveling exhibitions at the Millennium Gate Museum, Atlanta.">
+<meta name="keywords" content="bootstrap, gulp, sass, modern web design">
+<title>traveling-exhibitions - The Gate Museum</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- Fancybox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.10/dist/fancybox/fancybox.css">
+
+
+</head>
+
+<body>
+    <div>
+        <div class="page-reveal-transition">
+    <!-- this reveals after curtain reveals. it will be below the curtains -->
+    <div class="page-reveal-background"></div>
+
+    <!-- curtain reveal one by one, starting from 4th, then 3 and 5, then 2 and 6, then 1 and 7th -->
+    <div class="curtain">
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+    </div>
+    <div class="content-area">
+        <div class="mask">
+            <h5>Inspiring the future</h5>
+        </div>
+        <div class="loader-progress">
+            <div class="loader-line"></div>
+        </div>
+        <div class="loader-percentage">0%</div>
+    </div>
+</div>
+<div class="main-navigation fixed-top">
+    <div class="container-fluid">
+        <div class="navigation_inner">
+            <a href="index.html" class="brand_logo">
+                <img src="images/logo.svg" alt="The Gate Museum" class="brand_logo_image img-fluid">
+            </a>
+            <div class="navigation_menu ms-auto">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="buy-tickets.html">Tickets</a></li>
+                    <li><a href="facility-rental.html">Facility Rentals</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="humburger_menu">
+                <span>Menu</span>
+                <div class="humburger_icon">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="menu-overlay-bg"></div>
+<div class="offcanvas-menu-main">
+    <div class="bg-menu-overlay"></div>
+    <div class="close-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+            <path
+                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
+            </path>
+        </svg>
+    </div>
+    <div class="offcanvas-menu-inner">
+        <div class="top-grid-item">
+            <ul class="main-menu-items">
+                <li><span class="menu-title">The Museum</span>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li><span class="menu-title">The Art</span>
+                    <ul>
+                        <li><a href="collection.html">Permanent Collection</a></li>
+                        <li><a href="exhibitions.html">Temporary Exhibition</a></li>
+                        <li><a href="period-rooms.html">Period Rooms</a></li>
+                        <li><a href="statues-and-monuments.html">Statues & Monnuments</a></li>
+                        <li><a href="traveling-exhibitions.html">Travelling Exhibitions</a></li>
+                    </ul>
+                </li>
+                <li><a href="support.html">Support & Learn</a></li>
+                <li><a href="millennium-candler-gala.html">Candler Prize</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+        <main>
+
+
+            <div class="page_hero pb-5">
+                <div class="container mt-5">
+                    <div class="row justify-content-between align-items-end">
+                        <div class="col-lg-12">
+                            <div class="pre_title mb-2">On Tour Nationwide <span class="line"></span></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="h1">Traveling Exhibitions</h1>
+                        </div>
+                        <div class="col-lg-5">
+                            <p class="text-xlg serif-font text-muted">The Millennium Gate Museum partners with
+                                institutions
+                                across the country to bring powerful, historically significant exhibitions
+                                to new audiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section exhibit-feature">
+                <div class="container">
+
+                    <div class="row g-5 align-items-start">
+                        <div class="col-lg-5" data-aos="fade-right">
+                            <div class="position-relative">
+                                <img src="images/travelling.jpg" alt="The Many Lives of Andrew Young Exhibition"
+                                    class="img-fluid w-100 feature-img">
+                                <div class="position-absolute bottom-0 start-0 p-4 sponsored-banner">
+                                    <span class="d-block text-white ff-body fst-italic sponsored-label">Sponsored
+                                        by</span>
+                                    <span class="d-block text-white fw-bold mt-1">The Andrew Young Foundation &amp; The
+                                        National Monuments Foundation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7" data-aos="fade-left">
+                            <div class="pre_title mb-3">Available for Booking <span class="line"></span></div>
+                            <h2 class="h3 mb-4">"The Many Lives of Andrew Young"</h2>
+
+                            <p class="mb-4">The Millennium Gate Museum was honored to showcase an exhibition on the life
+                                of Ambassador Andrew Young — a living legend and Civil Rights leader who rallied
+                                alongside Martin Luther King Jr., and a true American hero.</p>
+
+                            <p class="mb-4">The exhibition was created by the museum's parent organization, the National
+                                Monuments Foundation in partnership with the Andrew Young Foundation. The museum had the
+                                privilege of hosting his 90th birthday celebration in March 2022 and was honored to
+                                house an exhibition based on his life's achievements.</p>
+
+                            <p class="mb-5">Its narrative begins in New Orleans, LA, and follows Young across the nation
+                                and the world — drawn from the ambassador's own words, transcribed from interviews by
+                                AJC reporter Ernie Suggs, along with imagery from his papers collection. Chapters were
+                                reformatted and printed onto <strong>30 fabric panels</strong>, which hung on the museum
+                                walls from March through October 2022 before touring the country.</p>
+
+                            <div class="d-flex flex-wrap gap-3 mb-5">
+                                <span class="badge-info-chip">
+                                    <strong>Format</strong><br>30 Fabric Panels
+                                </span>
+                                <span class="badge-info-chip">
+                                    <strong>Minimum Booking</strong><br>12 Weeks
+                                </span>
+                                <span class="badge-info-chip">
+                                    <strong>Wall Space Required</strong><br>100 Linear Feet
+                                </span>
+                                <span class="badge-info-chip">
+                                    <strong>Available From</strong><br>March 2024
+                                </span>
+                            </div>
+
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="https://www.thegatemuseum.org/img/guidebook.pdf" target="_blank"
+                                    class="btn btn-primary">
+                                    Download Guidebook
+                                </a>
+                                <a href="#booking" class="btn btn-outline-primary">
+                                    Enquire About Booking
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section bg-light" id="locations">
+                <div class="container">
+
+                    <div class="row mb-5">
+                        <div class="col-lg-12">
+                            <div class="pre_title mb-2">Tour History <span class="line"></span></div>
+                            <h2 class="h2">Exhibition Locations</h2>
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                            <div class="tour-stop-card">
+                                <span class="stop-num">06</span>
+                                <div class="stop-status stop-status--current">Latest Stop</div>
+                                <h4 class="stop-venue">Drake University</h4>
+                                <p class="stop-place">Olmstead Center, Des Moines, Iowa</p>
+                                <span class="stop-dates">February – March 2024</span>
+                                <a href="https://www.thegatemuseum.org/traveling-exhibitions/drake-university"
+                                    class="stop-link" target="_blank">View Photos →</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                            <div class="tour-stop-card">
+                                <span class="stop-num">05</span>
+                                <h4 class="stop-venue">Morehouse College</h4>
+                                <p class="stop-place">Atlanta, Georgia</p>
+                                <span class="stop-dates">October – November 2023</span>
+                                <a href="https://www.thegatemuseum.org/traveling-exhibitions/morehouse"
+                                    class="stop-link" target="_blank">View Photos →</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="tour-stop-card">
+                                <span class="stop-num">04</span>
+                                <h4 class="stop-venue">Jimmy Carter Presidential Library</h4>
+                                <p class="stop-place">Atlanta, Georgia</p>
+                                <span class="stop-dates">August – October 2023</span>
+                                <a href="https://www.thegatemuseum.org/traveling-exhibitions/jimmy" class="stop-link"
+                                    target="_blank">View Photos →</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+                            <div class="tour-stop-card">
+                                <span class="stop-num">03</span>
+                                <h4 class="stop-venue">International Civil Rights Center &amp; Museum</h4>
+                                <p class="stop-place">Greensboro, North Carolina</p>
+                                <span class="stop-dates">February – May 2023</span>
+                                <a href="https://www.thegatemuseum.org/traveling-exhibitions/north-carolina"
+                                    class="stop-link" target="_blank">View Photos →</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="tour-stop-card">
+                                <span class="stop-num">02</span>
+                                <h4 class="stop-venue">Penn Center</h4>
+                                <p class="stop-place">St Helena Island, South Carolina</p>
+                                <span class="stop-dates">November 2022 – January 2023</span>
+                                <a href="https://www.thegatemuseum.org/traveling-exhibitions/south-carolina"
+                                    class="stop-link" target="_blank">View Photos →</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+                            <div class="tour-stop-card">
+                                <span class="stop-num">01</span>
+                                <div class="stop-status stop-status--origin">Origin Venue</div>
+                                <h4 class="stop-venue">The Millennium Gate Museum</h4>
+                                <p class="stop-place">Atlanta, Georgia</p>
+                                <span class="stop-dates">March – October 2022</span>
+                                <a href="https://www.thegatemuseum.org/traveling-exhibitions/atlanta" class="stop-link"
+                                    target="_blank">View Photos →</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="booking-section section" id="booking">
+
+                <div class="booking-header-wrap">
+                    <div class="container">
+                        <div class="booking-header-card" data-aos="fade-up">
+                            <div class="row g-0">
+                                <div class="col-lg-5 p-5 bg-dark text-white d-flex flex-column justify-content-center">
+                                    <div class="pre_title mb-3 pre-title-alt">Booking Information
+                                        <span class="line pre-title-line-alt"></span>
+                                    </div>
+                                    <h2 class="h2 text-white mb-4">Bring History to<br>Your Community</h2>
+                                    <p class="mb-0 text-muted-light serif-font header-desc">
+                                        The exhibit is available for booking at museums, libraries, and educational
+                                        institutions nationwide.</p>
+                                </div>
+                                <div class="col-lg-7 p-5 bg-white border-start border-light d-flex align-items-center">
+                                    <div class="row w-100 g-4">
+                                        <div class="col-sm-6">
+                                            <div class="term-stat-item">
+                                                <span class="d-block text-primary fw-bold ff-heading h3 mb-1">12</span>
+                                                <span
+                                                    class="d-block text-muted text-uppercase ls-1 stat-label-refined">Weeks
+                                                    Minimum</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="term-stat-item">
+                                                <span class="d-block text-primary fw-bold ff-heading h3 mb-1">100
+                                                    +</span>
+                                                <span
+                                                    class="d-block text-muted text-uppercase ls-1 stat-label-refined">Linear
+                                                    Feet Wall
+                                                    Space</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="term-stat-item">
+                                                <span class="d-block text-primary fw-bold ff-heading h3 mb-1">Fee
+                                                    +</span>
+                                                <span
+                                                    class="d-block text-muted text-uppercase ls-1 stat-label-refined">Inbound
+                                                    Shipping</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="term-stat-item">
+                                                <span
+                                                    class="d-block text-primary fw-bold ff-heading h3 mb-1">Custom</span>
+                                                <span
+                                                    class="d-block text-muted text-uppercase ls-1 stat-label-refined">Space
+                                                    Adaptation</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section pt-0">
+                    <div class="container mt-5">
+                        <div class="row g-5">
+                            <div class="col-lg-7" data-aos="fade-right">
+                                <div class="pre_title mb-3">Technical Specifications <span class="line"></span></div>
+                                <h3 class="h3 mb-5">Installation Requirements</h3>
+
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="req-card-item">
+                                            <div class="req-icon">
+                                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                    <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="req-content">
+                                                <h6>Mounting System</h6>
+                                                <p>Mounting rods, brackets, and adhesive required for panel display.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="req-card-item">
+                                            <div class="req-icon">
+                                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                    <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="req-content">
+                                                <h6>Staffed Space</h6>
+                                                <p>Secure gallery space staffed during all public open hours.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="req-card-item">
+                                            <div class="req-icon">
+                                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                    <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="req-content">
+                                                <h6>Gallery Lighting</h6>
+                                                <p>Standard exhibit lighting required (exhibit is not self-lit).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="req-card-item">
+                                            <div class="req-icon">
+                                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                    <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="req-content">
+                                                <h6>Installation Crew</h6>
+                                                <p>Minimum two-person team for safe installation and de-installation.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="req-card-item">
+                                            <div class="req-icon">
+                                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                    <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="req-content">
+                                                <h6>Insurance</h6>
+                                                <p>Valid Certificate of Insurance required for the duration of booking.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="req-card-item req-card-item--guide">
+                                            <div class="req-content">
+                                                <p class="mb-3">For full technical specifications and setup
+                                                    instructions:</p>
+                                                <a href="https://www.thegatemuseum.org/img/guidebook.pdf"
+                                                    target="_blank" class="btn btn-outline-primary btn-sm">
+                                                    Download Guidebook (PDF)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5" data-aos="fade-left">
+                                <div class="contact-cta-card">
+                                    <div class="cta-inner">
+                                        <h4 class="mb-4 h5 ff-heading">Enquire About Booking</h4>
+                                        <p class="mb-5 serif-font text-muted-dark">Interested in bringing "The Many
+                                            Lives of Andrew Young" to your institution? We are happy to discuss
+                                            availability and space customization.</p>
+
+                                        <hr class="mb-5 opacity-10">
+
+                                        <div class="contact-strip mb-4">
+                                            <span class="strip-label">Direct Line</span>
+                                            <a href="tel:4048810900" class="strip-value">404 881 0900</a>
+                                        </div>
+
+                                        <div class="contact-strip mb-5">
+                                            <span class="strip-label">Send an Email</span>
+                                            <a href="mailto:mschmitz@thenmf.org"
+                                                class="strip-value">mschmitz@thenmf.org</a>
+                                        </div>
+
+                                        <a href="mailto:mschmitz@thenmf.org" class="btn btn-primary d-block py-3">
+                                            Apply for Exhibition
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+        </main>
+
+        <div class="footer">
+    <div class="pre_footer_outer">
+        <div class="container pre_footer_menu">
+            <a href="#">#TheGateMuseum</a>
+            <a href="#">News & Articles</a>
+            <a href="#">Internship Opportunities</a>
+            <a href="#">Volunteer Opportunities</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-4 py-4">
+                <h4 class="text-white mb-2">The Millennium Gate Museum</h4>
+                <p>395 17th St NW Atlanta GA 30363</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="text-white small text-decoration-underline">Buy Tickets</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-white small text-decoration-underline">View in Google Maps</a>
+                </div>
+
+                <div class="newsletter-form mt-5 mb-2">
+                    <h5 class="text-white mb-2 ff-body h6 fw-normal">Subscribe to our newsletter</h5>
+                    <form action="#">
+                        <div class="d-flex input-group">
+                            <input type="email" placeholder="Enter your email" class="form-control form-control-sm">
+                            <button type="submit" class="btn btn-sm btn-primary"><i class="ri-send-plane-fill"></i>
+                                <span class="d-none d-md-inline-block"> Subscribe</span></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-lg-5 offset-lg-3">
+                <div class="row">
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Museum</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Visit</a></li>
+                            <li><a href="#">Exhibitions</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Art</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">Permanent Collection</a></li>
+                            <li><a href="#">Temporary Exhibition</a></li>
+                            <li><a href="#">Period Rooms</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container post_footer">
+        <div class="py-2 text-sm">For facility rentals related inquiries <a href="#">click here</a></div>
+        <div class="social_icons py-2">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-fill"></i></a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright_inner">
+                <ul class="list-inline py-3">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Copyright</a></li>
+                </ul>
+                <div class="py-3">Website by <a href="#">Webmaddy</a></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+<!-- Scripts -->
+<script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>

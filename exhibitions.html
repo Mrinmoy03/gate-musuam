@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore current and past exhibitions at the Millennium Gate Museum">
+<meta name="keywords" content="bootstrap, gulp, sass, modern web design">
+<title>Exhibitions - The Gate Museum</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+    <div>
+        <div class="page-reveal-transition">
+    <!-- this reveals after curtain reveals. it will be below the curtains -->
+    <div class="page-reveal-background"></div>
+
+    <!-- curtain reveal one by one, starting from 4th, then 3 and 5, then 2 and 6, then 1 and 7th -->
+    <div class="curtain">
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+    </div>
+    <div class="content-area">
+        <div class="mask">
+            <h5>Inspiring the future</h5>
+        </div>
+        <div class="loader-progress">
+            <div class="loader-line"></div>
+        </div>
+        <div class="loader-percentage">0%</div>
+    </div>
+</div>
+<div class="main-navigation fixed-top">
+    <div class="container-fluid">
+        <div class="navigation_inner">
+            <a href="index.html" class="brand_logo">
+                <img src="images/logo.svg" alt="The Gate Museum" class="brand_logo_image img-fluid">
+            </a>
+            <div class="navigation_menu ms-auto">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="buy-tickets.html">Tickets</a></li>
+                    <li><a href="facility-rental.html">Facility Rentals</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="humburger_menu">
+                <span>Menu</span>
+                <div class="humburger_icon">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="menu-overlay-bg"></div>
+<div class="offcanvas-menu-main">
+    <div class="bg-menu-overlay"></div>
+    <div class="close-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+            <path
+                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
+            </path>
+        </svg>
+    </div>
+    <div class="offcanvas-menu-inner">
+        <div class="top-grid-item">
+            <ul class="main-menu-items">
+                <li><span class="menu-title">The Museum</span>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li><span class="menu-title">The Art</span>
+                    <ul>
+                        <li><a href="collection.html">Permanent Collection</a></li>
+                        <li><a href="exhibitions.html">Temporary Exhibition</a></li>
+                        <li><a href="period-rooms.html">Period Rooms</a></li>
+                        <li><a href="statues-and-monuments.html">Statues & Monnuments</a></li>
+                        <li><a href="traveling-exhibitions.html">Travelling Exhibitions</a></li>
+                    </ul>
+                </li>
+                <li><a href="support.html">Support & Learn</a></li>
+                <li><a href="millennium-candler-gala.html">Candler Prize</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+        <main>
+            <!-- Page Hero -->
+            <div class="page_hero pb-5">
+                <div class="container mt-5">
+                    <div class="row justify-content-between align-items-end">
+                        <div class="col-lg-12">
+                            <div class="pre_title mb-2">Discovery <span class="line"></span></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="h1">Exhibitions</h1>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="exhibition-nav d-flex justify-content-lg-end gap-3 mt-4 mt-lg-0">
+                                <a href="#current-exhibition" class="circle-nav-btn active">
+                                    CURRENT<br>EXHIBITION
+                                </a>
+                                <a href="#upcoming-exhibition" class="circle-nav-btn">
+                                    UPCOMING<br>EXHIBITION
+                                </a>
+                                <a href="#past-exhibition" class="circle-nav-btn">
+                                    PAST<br>EXHIBITION
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section id="current-exhibition" class="section pt-0 mt-5">
+                <div class="container">
+                    <div class="row  mb-5">
+                        <div class="col-lg-12 mb-4">
+                            <div class="pre_title text-primary mb-3">Current Exhibition</div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="image-reveal-wrapper mb-4 mb-lg-0">
+                                <img src="images/temporary-collection/1.jpg" class="img-fluid"
+                                    alt="My Friend, the Earth Exhibition">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 ps-lg-5">
+                            <h2 class="h3 serif-font mb-2">MY FRIEND, THE EARTH</h2>
+                            <p class="text-primary fw-medium text-uppercase ls-2 mb-4">28 JANUARY – 8 APRIL 2023</p>
+                            <p class="text-lg fw-semibold mb-3">A solo exhibition by internationally acclaimed artist
+                                Bruno Zupan.</p>
+                            <p class="text-muted">BRUNO ZUPAN celebrates the Earth in each of his paintings and has
+                                spent his life in the pursuit of light. His vibrant colors and spontaneous brushwork
+                                capture fleeting moments of light in such a way that the viewer feels present at the
+                                scene as his brush flies across the canvas.</p>
+                            <p class="text-muted">He has traveled around the earth and explored cities and beaches,
+                                mountains, rivers and pastures – winter, night and day, spring and summer. From the
+                                golden warmth of a Venetian sunset to the sparkling city lights of Boston, he captures
+                                the varied, yet simple manifestations of its beauty.</p>
+                            <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Past Exhibitions Section -->
+            <section id="past-exhibition" class="section bg-light py-5">
+                <div class="container py-lg-4">
+                    <div class="row mb-5">
+                        <div class="col-lg-6">
+                            <div class="pre_title text-primary mb-2">Retrospective</div>
+                            <h2 class="h2">Past Exhibitions</h2>
+                        </div>
+                    </div>
+
+                    <div class="row g-5">
+                        <!-- Freedom from Oppression -->
+                        <div class="col-lg-6">
+                            <div class="exhibition-card h-100 mb-5">
+                                <div class="mb-4">
+                                    <img src="images/temporary-collection/2.jpg" class="img-fluid"
+                                        alt="Freedom from Oppression">
+                                </div>
+                                <div class="pre_title small text-muted mb-2">Past Exhibition</div>
+                                <h3 class="h3 serif-font mb-2">Freedom from Oppression</h3>
+                                <p class="text-primary small fw-medium mb-3">October 2022-January 2023</p>
+                                <p class="text-muted small">The exhibition depicts scenes and artifacts from the
+                                    Hungarian Revolution of 1956 against the Soviet Union. Over a span of thirteen days,
+                                    from mid-October to early November, the world watched as the people of Hungary rose
+                                    up in an attempt to overthrow the oppressive Soviet regime. While the Revolution of
+                                    1956 was defeated, it set the stage for a number of similar uprisings against
+                                    oppression throughout eastern Europe in the decades since, and its goal of a free
+                                    and independent Hungary would finally come to fruition in 1989. A statue of a female
+                                    freedom fighter, Erika Szeles, a 15-year-old soldier and nurse who lost her life in
+                                    the fighting, has found a permanent base in the museum’s park.</p>
+                                <p class="text-muted small">Recent additions to the exhibition go on to discuss the
+                                    Prague Spring of 1968-1969, as well as the Solidarity Movement in Poland in
+                                    1980-1981, both against the oppressive government of the Soviet Union and its
+                                    satellite regimes in those nations. The ideals of both the Prague Spring and
+                                    Solidarity would ultimately inspire the reformationist policies of glasnost and
+                                    perestroika advocated by Soviet premier Mikhail Gorbachev, which ultimately led to
+                                    the fall of the Berlin Wall and the collapse of the Soviet Union in 1991.</p>
+                            </div>
+                        </div>
+
+                        <!-- The Many Lives of Andrew Young -->
+                        <div class="col-lg-6">
+                            <div class="exhibition-card h-100 mb-5">
+                                <div class="mb-4">
+                                    <img src="images/temporary-collection/3.jpg" class="img-fluid"
+                                        alt="The Many Lives of Andrew Young">
+                                </div>
+                                <div class="pre_title small text-muted mb-2">Past Exhibition</div>
+                                <h3 class="h3 serif-font mb-2">The Many Lives of Andrew Young</h3>
+                                <p class="text-primary small fw-medium mb-3">March, 2022 – October, 2022</p>
+                                <p class="text-muted small">The exhibition “The Many Lives of Andrew Young” tells the
+                                    inspiring story of pastor, civil rights activist, congressman, UN ambassador, mayor,
+                                    philanthropist, and American hero Andrew J. Young, Jr. Its narrative begins in New
+                                    Orleans, LA and follows Young across the nation and the world. This exhibition is
+                                    drawn from the ambassador’s own words, transcribed and summarized from interviews
+                                    conducted by AJC reporter Ernie Suggs, along with imagery from the ambassador’s
+                                    papers collection, among other sources, which was laid out by Donald Edward Bermudez
+                                    of A Studio Named Bermudez.</p>
+                            </div>
+                        </div>
+
+                        <!-- José Julián Martí Pérez -->
+                        <div class="col-lg-6">
+                            <div class="exhibition-card h-100 mb-5">
+                                <div class="mb-4">
+                                    <img src="images/temporary-collection/4.jpg" class="img-fluid"
+                                        alt="José Julián Martí Pérez">
+                                </div>
+                                <div class="pre_title small text-muted mb-2">Past Exhibition</div>
+                                <h3 class="h3 serif-font mb-2">José Julián Martí Pérez</h3>
+                                <p class="text-primary small fw-medium mb-3">June 26, 2021 – March 5, 2022</p>
+                                <p class="text-muted small">One of Cuba’s greatest national heroes and liberators is
+                                    José Julián Martí Pérez. He was a poet, philosopher, and political theorist, and his
+                                    works were critical to inspiring the Cuban Revolution against the Spanish Empire in
+                                    the late nineteenth century. While he would not survive the revolution, having been
+                                    killed during the Battle of Dos Rios in 1895, he is today regarded as the “Apostle
+                                    of Cuban Independence.” As a writer, the ideals of liberty and democracy are common
+                                    themes in his works, which would become a critical element of Cuban political
+                                    theory.</p>
+                                <p class="text-muted small">The Millennium Gate Museum is honored to have a bust of Jose
+                                    Martí, commissioned by the Martí Historical Society and created by sculptor
+                                    Alejandro Aguilera, on permanent display on our grounds, in honor of Cuban history
+                                    and the Cuban-American communities in Atlanta and all across the nation.</p>
+                            </div>
+                        </div>
+
+                        <!-- Cuban Artist Michelle Trunzo -->
+                        <div class="col-lg-6">
+                            <div class="exhibition-card h-100 mb-5">
+                                <div class="mb-4">
+                                    <img src="images/temporary-collection/5.jpg" class="img-fluid"
+                                        alt="Cuban Artist Michelle Trunzo">
+                                </div>
+                                <div class="pre_title small text-muted mb-2">Past Exhibition</div>
+                                <h3 class="h3 serif-font mb-2">Cuban Artist Michelle Trunzo</h3>
+                                <p class="text-primary small fw-medium mb-3">June 26, 2021 – March 5, 2022</p>
+                                <p class="text-muted small">Michelle Trunzo was a Cuban-American artist best known for
+                                    her paintings of tropical Cuban landscapes, roses, and later architecture and
+                                    portraits. She began her journey as an artist at the age of seven when her father
+                                    hired a French painter to teach her the specific skills of composition, intensity,
+                                    and shade. Due to her involvement in the rebellion against the Batista government,
+                                    in 1957, at the age of 24, she fled to the United States for the fear she would be
+                                    killed if she remained in Cuba.</p>
+                                <p class="text-muted small">Throughout the decades, she painted many Cuban beach scenes,
+                                    various types and colors of roses, other Cuban landscapes, and eventually also Cuban
+                                    architecture. She also generated works in the styles of abstract expressionism,
+                                    impressionism, and portraiture. Michelle has amassed over twenty series of artwork,
+                                    which total over three hundred and sixty paintings.</p>
+                            </div>
+                        </div>
+
+                        <!-- Illustrious Governor Gwinnett -->
+                        <div class="col-lg-6">
+                            <div class="exhibition-card h-100 mb-5">
+                                <div class="mb-4">
+                                    <img src="images/temporary-collection/6.jpg" class="img-fluid"
+                                        alt="Illustrious Governor Gwinnett">
+                                </div>
+                                <div class="pre_title small text-muted mb-2">Past Exhibition</div>
+                                <h3 class="h3 serif-font mb-2">Illustrious Governor Gwinnett</h3>
+                                <p class="text-primary small fw-medium mb-3">December 8, 2017 – June 2, 2018</p>
+                                <p class="text-muted small">In early 2016, we began the process of verifying the
+                                    provenance of a colonial portrait we thought may be among the first Governors of
+                                    Georgia, Button Gwinnett, for William Fickling. While this alone was an exciting
+                                    project, it was made even more important as this work is likely the only portrait
+                                    done of the Governor while he was living in the United States. With the help of
+                                    expert restorer Rustin Levenson, her team at ArtCare, and the Georgia Bureau of
+                                    Investigation, we thoroughly examined the identity of the person in the portrait,
+                                    concluding that this likeness almost certainly depicts the true face of Governor
+                                    Gwinnett.</p>
+                                <p class="text-muted small">The exhibition featured the now famous Fickling portrait as
+                                    well as Governor Gwinnett’s bed from Saint Catherines Island and other late-18th and
+                                    early-19th century Georgian furniture, recreating his bedroom from the Old
+                                    Bosomworth Plantation. We are excited to present this exhibition alongside our
+                                    permanent collection period room depicting the Midway, Georgia, study of fellow
+                                    signer, Lyman Hall.</p>
+                            </div>
+                        </div>
+
+                        <!-- The Games: Ancient Olympia to Atlanta to Rio -->
+                        <div class="col-lg-6">
+                            <div class="exhibition-card h-100 mb-5">
+                                <div class="mb-4">
+                                    <img src="images/temporary-collection/7.jpg" class="img-fluid"
+                                        alt="The Games: Ancient Olympia to Atlanta to Rio">
+                                </div>
+                                <div class="pre_title small text-muted mb-2">Past Exhibition</div>
+                                <h3 class="h3 serif-font mb-2">The Games</h3>
+                                <p class="text-primary small fw-medium mb-3">August 20, 2016 – January 2, 2017</p>
+                                <p class="text-muted small">In celebration of the 20th anniversary of the Atlanta
+                                    Centennial Olympic Games and in collaboration with Hearst Castle, California, the
+                                    Michael C. Carlos Museum, and Oglethorpe University, The Games: Ancient Olympia to
+                                    Atlanta to Rio featured Ancient Greek artifacts, many of which exceed 2,500 years of
+                                    age, which tell the history of the Olympic Games and Ancient Olympia, athletic
+                                    competition, and Greek mythology and politics.</p>
+                                <p class="text-muted small">The Centennial Olympic Games, hosted by Atlanta, Georgia in
+                                    1996 had an enormous impact upon the built environment of the city. Buildings,
+                                    parks, and transportation infrastructure were constructed, and the regional economy
+                                    grew. When the eyes of the world fell on Atlanta in July 1996 the city was prepared
+                                    and successfully showcased its arrival as an important international metropolis on
+                                    the world stage. To this day, Olympic monuments still grace the city including
+                                    Centennial Olympic Park, Turner Field, and the Prince of Wales’s World Athlete’s
+                                    Monument owned by the National Monuments Foundation and Millennium Gate Museum.</p>
+                            </div>
+                        </div>
+
+                        <!-- Chinese Master Artist I-Hsiung Ju -->
+                        <div class="col-lg-6">
+                            <div class="exhibition-card h-100 mb-5">
+                                <div class="mb-4">
+                                    <img src="images/temporary-collection/8.jpg" class="img-fluid"
+                                        alt="Chinese Master Artist I-Hsiung Ju">
+                                </div>
+                                <div class="pre_title small text-muted mb-2">Past Exhibition</div>
+                                <h3 class="h3 serif-font mb-2">Chinese Master Artist I-Hsiung Ju</h3>
+                                <p class="text-primary small fw-medium mb-3">July 31- October 18, 2015</p>
+                                <p class="text-muted small">I-Hsiung Ju was born in 1923 in Jiangyin, Jiangsu, China. He
+                                    is considered one of a few artists able to blend two worlds of style, technique, and
+                                    idiom to produce a unique form of painting that is both modern and traditionally
+                                    Oriental. Ju is famous for saying “a Chinese artist is not only a painter, but also
+                                    a poet and a philosopher.” He is an author of several painting textbooks and
+                                    numerous papers on Chinese art.</p>
+                                <p class="text-muted small">During his life, he did what he loved, creating and teaching
+                                    painting. A poet and philosopher, his paintings are lessons in living a fulfilled
+                                    life and appreciation of the majesty of nature. Ju is revered in Taiwan and the
+                                    Philippines and his works hang in their national museums. I-Hsiung died on March 17,
+                                    2012. The works of I-Hsiung Ju show the refinements and delicate strokes of Chinese
+                                    calligraphy. Ju’s brush has a fascinating disciplined freedom.</p>
+                            </div>
+                        </div>
+
+                        <!-- The Art of Diplomacy -->
+                        <div class="col-lg-6">
+                            <div class="exhibition-card h-100 mb-5">
+                                <div class="mb-4">
+                                    <img src="images/temporary-collection/9.jpg" class="img-fluid"
+                                        alt="The Art of Diplomacy">
+                                </div>
+                                <div class="pre_title small text-muted mb-2">Past Exhibition</div>
+                                <h3 class="h3 serif-font mb-2">The Art of Diplomacy</h3>
+                                <p class="text-primary small fw-medium mb-3">August 2, 2014 – July 26, 2015</p>
+                                <p class="text-muted small">The Art of Diplomacy: Winston Churchill and the Pursuit of
+                                    Painting displayed more than 30 paintings by Winston Churchill, many of which have
+                                    never before been publicly exhibited, and examined the notion that painting may
+                                    have helped save Western civilization. Although a hobby, Churchill wrote of the
+                                    effect that it had on him personally and professionally.</p>
+                                <p class="text-muted small">At the beginning in 1915, painting literally pulled
+                                    Churchill
+                                    out of his darkest political days and set him on his journey towards his finest
+                                    hour. It was painting, he said, that helped him cope with the stress and strain of
+                                    his political life, and allowed him to be productive as he developed his thinking
+                                    about the rising danger of Hitler and Germany. In addition, Churchill found that the
+                                    skills he learned from painting made his leadership more effective and he used his
+                                    painter’s eye to achieve his political and diplomatic goals.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Rows -->
+                    <div class="row g-5 mt-4">
+                        <div class="col-lg-4">
+                            <div class="exhibition-card h-100">
+                                <div class="mb-4">
+                                    <img src="images/temporary-collection/10.jpg" class="img-fluid" alt="Japan-Georgia">
+                                </div>
+                                <h3 class="h5 serif-font mb-3">Japan-Georgia 40th Anniversary</h3>
+                                <p class="text-muted small">On March 28, 2014 Georgia commemorated the 40th anniversary
+                                    of consular relations with Japan. The Millennium Gate Museum planted 40
+                                    Somei-Yoshino cherry trees around the park and hosted dozens of Japanese arts and
+                                    culture organizations.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="exhibition-card h-100">
+                                <div class="mb-4">
+                                    <img src="images/temporary-collection/11.jpg" class="img-fluid" alt="WAVES">
+                                </div>
+                                <h3 class="h5 serif-font mb-3">WAVES: New Paintings by Peter Polites</h3>
+                                <p class="text-muted small">Architects are often artists too. Hello Frank Lloyd Wright,
+                                    Richard Meier, Naguchi, Gaudi and John Portman. Atlanta architect Peter Polites has
+                                    painted for 50 years. In a solo exhibition titled WAVES, 20 ocean and marsh
+                                    landscapes are presented.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="exhibition-card h-100">
+                                <div class="mb-4">
+                                    <img src="images/temporary-collection/12.jpg" class="img-fluid"
+                                        alt="American Impressionism">
+                                </div>
+                                <h3 class="h5 serif-font mb-3">Transcending Vision: American Impressionism</h3>
+                                <p class="text-muted small">Explores both the dissemination of Impressionism from its
+                                    French roots into the American idiom and its reinterpretation of American landscape
+                                    painting. Features over 50 masterpieces by Childe Hassam, Arthur Wesley Dow, and
+                                    Robert Spencer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rob and Leon Krier -->
+            <section class="section py-5">
+                <div class="container py-lg-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <img src="images/temporary-collection/13.jpg" class="img-fluid" alt="Rob and Leon Krier">
+                        </div>
+                        <div class="col-lg-6 ps-lg-5 mt-4 mt-lg-0">
+                            <div class="pre_title text-primary mb-3">Global Visionaries</div>
+                            <h2 class="h2 mb-4 serif-font">Rob and Leon Krier</h2>
+                            <p class="text-muted">Rob and Leon Krier have influenced architecture and urbanism for the
+                                past 30 years. Born in Luxembourg, the brothers witnessed their hometown devastated by
+                                poor planning decisions and low-grade buildings.</p>
+                            <p class="text-muted">This lead them to study the root causes of non-contextual developments
+                                embracing the principles and techniques of traditional architecture and urbanism,
+                                thereby rescuing the landscape, town-scape and civic life of our nation from the failed
+                                experiment of a drive-in utopia. Leon Krier is considered by many the intellectual
+                                godfather of the New Urbanism movement in America.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="footer">
+    <div class="pre_footer_outer">
+        <div class="container pre_footer_menu">
+            <a href="#">#TheGateMuseum</a>
+            <a href="#">News & Articles</a>
+            <a href="#">Internship Opportunities</a>
+            <a href="#">Volunteer Opportunities</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-4 py-4">
+                <h4 class="text-white mb-2">The Millennium Gate Museum</h4>
+                <p>395 17th St NW Atlanta GA 30363</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="text-white small text-decoration-underline">Buy Tickets</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-white small text-decoration-underline">View in Google Maps</a>
+                </div>
+
+                <div class="newsletter-form mt-5 mb-2">
+                    <h5 class="text-white mb-2 ff-body h6 fw-normal">Subscribe to our newsletter</h5>
+                    <form action="#">
+                        <div class="d-flex input-group">
+                            <input type="email" placeholder="Enter your email" class="form-control form-control-sm">
+                            <button type="submit" class="btn btn-sm btn-primary"><i class="ri-send-plane-fill"></i>
+                                <span class="d-none d-md-inline-block"> Subscribe</span></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-lg-5 offset-lg-3">
+                <div class="row">
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Museum</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Visit</a></li>
+                            <li><a href="#">Exhibitions</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Art</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">Permanent Collection</a></li>
+                            <li><a href="#">Temporary Exhibition</a></li>
+                            <li><a href="#">Period Rooms</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container post_footer">
+        <div class="py-2 text-sm">For facility rentals related inquiries <a href="#">click here</a></div>
+        <div class="social_icons py-2">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-fill"></i></a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright_inner">
+                <ul class="list-inline py-3">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Copyright</a></li>
+                </ul>
+                <div class="py-3">Website by <a href="#">Webmaddy</a></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+<!-- Scripts -->
+<script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>

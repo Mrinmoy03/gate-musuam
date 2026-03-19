@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore the historic period rooms and recreations at the Millennium Gate Museum">
+<meta name="keywords" content="bootstrap, gulp, sass, modern web design">
+<title>Period Rooms - The Gate Museum</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- Fancybox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.10/dist/fancybox/fancybox.css">
+
+
+<!-- Isotope -->
+<script src="https://cdn.jsdelivr.net/npm/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <div class="page-reveal-transition">
+    <!-- this reveals after curtain reveals. it will be below the curtains -->
+    <div class="page-reveal-background"></div>
+
+    <!-- curtain reveal one by one, starting from 4th, then 3 and 5, then 2 and 6, then 1 and 7th -->
+    <div class="curtain">
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+    </div>
+    <div class="content-area">
+        <div class="mask">
+            <h5>Inspiring the future</h5>
+        </div>
+        <div class="loader-progress">
+            <div class="loader-line"></div>
+        </div>
+        <div class="loader-percentage">0%</div>
+    </div>
+</div>
+<div class="main-navigation fixed-top">
+    <div class="container-fluid">
+        <div class="navigation_inner">
+            <a href="index.html" class="brand_logo">
+                <img src="images/logo.svg" alt="The Gate Museum" class="brand_logo_image img-fluid">
+            </a>
+            <div class="navigation_menu ms-auto">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="buy-tickets.html">Tickets</a></li>
+                    <li><a href="facility-rental.html">Facility Rentals</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="humburger_menu">
+                <span>Menu</span>
+                <div class="humburger_icon">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="menu-overlay-bg"></div>
+<div class="offcanvas-menu-main">
+    <div class="bg-menu-overlay"></div>
+    <div class="close-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+            <path
+                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
+            </path>
+        </svg>
+    </div>
+    <div class="offcanvas-menu-inner">
+        <div class="top-grid-item">
+            <ul class="main-menu-items">
+                <li><span class="menu-title">The Museum</span>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li><span class="menu-title">The Art</span>
+                    <ul>
+                        <li><a href="collection.html">Permanent Collection</a></li>
+                        <li><a href="exhibitions.html">Temporary Exhibition</a></li>
+                        <li><a href="period-rooms.html">Period Rooms</a></li>
+                        <li><a href="statues-and-monuments.html">Statues & Monnuments</a></li>
+                        <li><a href="traveling-exhibitions.html">Travelling Exhibitions</a></li>
+                    </ul>
+                </li>
+                <li><a href="support.html">Support & Learn</a></li>
+                <li><a href="millennium-candler-gala.html">Candler Prize</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+        <main>
+            <!-- Page Hero -->
+            <div class="page_hero pb-5">
+                <div class="container mt-5">
+                    <div class="row justify-content-between ">
+                        <div class="col-lg-12">
+                            <div class="pre_title mb-2">Immersive History <span class="line"></span></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="h1">Period Rooms</h1>
+                        </div>
+                        <div class="col-lg-5">
+                            <p class="text-xlg serif-font text-muted">The Millennium Gate Museum features meticulously
+                                reconstructed period rooms that transport visitors through Georgia's rich industrial and
+                                social history.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Glenn Office -->
+            <section class="section bg-light py-5">
+                <div class="container py-lg-5">
+                    <div class="row align-items-center mb-5">
+                        <div class="col-lg-6">
+                            <div class="image-reveal-wrapper mb-4 mb-lg-0">
+                                <a href="images/period-rooms/1.jpg" data-fancybox="glenn-office"
+                                    data-caption="Glenn Office Recreation">
+                                    <img src="images/period-rooms/1.jpg" class="img-fluid"
+                                        alt="Glenn Office Recreation">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 ps-lg-5">
+                            <div class="pre_title text-primary mb-3">Corporate Industrial Heritage</div>
+                            <h2 class="h2 mb-4 serif-font">Glenn Office</h2>
+                            <p class="text-md mb-4">Recreation of the office of Thomas Kearney Glenn at Atlantic Steel.
+                                While spartan by modern understanding, in the late 19th- and early 20th-centuries, an
+                                office like this would have been considered standard for a corporate executive at an
+                                industrial plant.</p>
+                            <p class="text-muted">The furniture in the room is original to Mr. Glenn's occupancy of the
+                                office from 1908-1922. Every detail, from the desk to the archival documents, has been
+                                preserved to provide an authentic glimpse into the daily life of a leading industrialist
+                                of the era.</p>
+                        </div>
+                    </div>
+                    <div class="isotope-grid mt-4">
+                        <div class="isotope-item col-6 col-md-4 col-lg-3">
+                            <a href="images/period-rooms/2.jpg" data-fancybox="glenn-office"
+                                data-caption="Glenn Office Detail 1">
+                                <img src="images/period-rooms/2.jpg" class="img-fluid" alt="Glenn Office Detail 1">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-3">
+                            <a href="images/period-rooms/3.jpg" data-fancybox="glenn-office"
+                                data-caption="Glenn Office Detail 2">
+                                <img src="images/period-rooms/3.jpg" class="img-fluid" alt="Glenn Office Detail 2">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-3">
+                            <a href="images/period-rooms/4.jpg" data-fancybox="glenn-office"
+                                data-caption="Glenn Office Detail 3">
+                                <img src="images/period-rooms/4.jpg" class="img-fluid" alt="Glenn Office Detail 3">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-3">
+                            <a href="images/period-rooms/5.jpg" data-fancybox="glenn-office"
+                                data-caption="Glenn Office Detail 4">
+                                <img src="images/period-rooms/5.jpg" class="img-fluid" alt="Glenn Office Detail 4">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-3">
+                            <a href="images/period-rooms/6.jpg" data-fancybox="glenn-office"
+                                data-caption="Glenn Office Detail 4">
+                                <img src="images/period-rooms/6.jpg" class="img-fluid" alt="Glenn Office Detail 4">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-3">
+                            <a href="images/period-rooms/7.jpg" data-fancybox="glenn-office"
+                                data-caption="Glenn Office Detail 4">
+                                <img src="images/period-rooms/7.jpg" class="img-fluid" alt="Glenn Office Detail 4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mims-Midway Room -->
+            <section class="section py-5">
+                <div class="container py-lg-5">
+                    <div class="row align-items-center flex-row-reverse mb-5">
+                        <div class="col-lg-6">
+                            <div class="image-reveal-wrapper mb-4 mb-lg-0">
+                                <a href="images/period-rooms/8.jpg" data-fancybox="mims-midway"
+                                    data-caption="Mims-Midway Room Reproduction">
+                                    <img src="images/period-rooms/8.jpg" class="img-fluid"
+                                        alt="Mims-Midway Room Reproduction">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 pe-lg-5">
+                            <div class="pre_title text-primary mb-3">Colonial Significance</div>
+                            <h2 class="h2 mb-4 serif-font">Mims-Midway Room</h2>
+                            <p class="text-md mb-4">Recreation of the study of Lyman Hall in his home in Midway,
+                                Georgia. Mr. Hall was one of three Signers of the Declaration of Independence to come
+                                from the colony of Georgia, and was elected governor of the state of Georgia in 1783,
+                                serving one year in that office.</p>
+                            <p class="text-muted">The furniture in this room is original to the house, now the Midway
+                                Museum, and was transported to Atlanta to create this reproduction. It stands as a
+                                testament to the enduring legacy of Georgia's founding fathers and the early days of
+                                American independence.</p>
+                        </div>
+                    </div>
+                    <div class="isotope-grid mt-4">
+                        <div class="isotope-item col-6 col-md-4 col-lg-4">
+                            <a href="images/period-rooms/9.jpg" data-fancybox="mims-midway"
+                                data-caption="Mims-Midway Detail 1">
+                                <img src="images/period-rooms/9.jpg" class="img-fluid" alt="Mims-Midway Detail 1">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-4">
+                            <a href="images/period-rooms/10.jpg" data-fancybox="mims-midway"
+                                data-caption="Mims-Midway Detail 2">
+                                <img src="images/period-rooms/10.jpg" class="img-fluid" alt="Mims-Midway Detail 2">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-4">
+                            <a href="images/period-rooms/11.jpg" data-fancybox="mims-midway"
+                                data-caption="Mims-Midway Detail 3">
+                                <img src="images/period-rooms/11.jpg" class="img-fluid" alt="Mims-Midway Detail 3">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-4">
+                            <a href="images/period-rooms/12.jpg" data-fancybox="mims-midway"
+                                data-caption="Mims-Midway Detail 3">
+                                <img src="images/period-rooms/12.jpg" class="img-fluid" alt="Mims-Midway Detail 3">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-4">
+                            <a href="images/period-rooms/13.jpg" data-fancybox="mims-midway"
+                                data-caption="Mims-Midway Detail 3">
+                                <img src="images/period-rooms/13.jpg" class="img-fluid" alt="Mims-Midway Detail 3">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-4">
+                            <a href="images/period-rooms/14.jpg" data-fancybox="mims-midway"
+                                data-caption="Mims-Midway Detail 3">
+                                <img src="images/period-rooms/14.jpg" class="img-fluid" alt="Mims-Midway Detail 3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rhodes-Robinson Room -->
+            <section class="section bg-light py-5">
+                <div class="container py-lg-5">
+                    <div class="row align-items-center mb-5">
+                        <div class="col-lg-6">
+                            <div class="image-reveal-wrapper mb-4 mb-lg-0">
+                                <a href="images/period-rooms/15.jpg" data-fancybox="rhodes-robinson"
+                                    data-caption="Rhodes-Robinson Room Drawing Room">
+                                    <img src="images/period-rooms/15.jpg" class="img-fluid"
+                                        alt="Rhodes-Robinson Room Drawing Room">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 ps-lg-5">
+                            <div class="pre_title text-primary mb-3">Architectural Excellence</div>
+                            <h2 class="h2 mb-4 serif-font">Rhodes-Robinson Room</h2>
+                            <p class="text-md mb-4">Reproduction of the drawing room of Pink House, located at 541 West
+                                Paces Ferry Road, at 84% scale. Pink House was commissioned by Joseph Rhodes to
+                                architect Philip Shutze, and later given by Mr. Rhodes to his daughter, Josephine
+                                Crawford Rhodes, and her husband, James D. Robinson, Jr.</p>
+                            <p class="text-muted">The property remains a private residence today, but most of the
+                                furnishings in this reproduction are original to the house during the Robinson ownership
+                                period. This room showcases the classical elegance and architectural mastery that
+                                defined Atlanta's most prestigious residences.</p>
+                        </div>
+                    </div>
+                    <div class="isotope-grid mt-4">
+                        <div class="isotope-item col-6 col-md-4 col-lg-3">
+                            <a href="images/period-rooms/16.jpg" data-fancybox="rhodes-robinson"
+                                data-caption="Rhodes-Robinson Detail 1">
+                                <img src="images/period-rooms/16.jpg" class="img-fluid" alt="Rhodes-Robinson Detail 1">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-3">
+                            <a href="images/period-rooms/17.jpg" data-fancybox="rhodes-robinson"
+                                data-caption="Rhodes-Robinson Detail 2">
+                                <img src="images/period-rooms/17.jpg" class="img-fluid" alt="Rhodes-Robinson Detail 2">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-3">
+                            <a href="images/period-rooms/18.jpg" data-fancybox="rhodes-robinson"
+                                data-caption="Rhodes-Robinson Detail 3">
+                                <img src="images/period-rooms/18.jpg" class="img-fluid" alt="Rhodes-Robinson Detail 3">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-3">
+                            <a href="images/period-rooms/19.jpg" data-fancybox="rhodes-robinson"
+                                data-caption="Rhodes-Robinson Detail 4">
+                                <img src="images/period-rooms/19.jpg" class="img-fluid" alt="Rhodes-Robinson Detail 4">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-3">
+                            <a href="images/period-rooms/20.jpg" data-fancybox="rhodes-robinson"
+                                data-caption="Rhodes-Robinson Detail 4">
+                                <img src="images/period-rooms/20.jpg" class="img-fluid" alt="Rhodes-Robinson Detail 4">
+                            </a>
+                        </div>
+                        <div class="isotope-item col-6 col-md-4 col-lg-3">
+                            <a href="images/period-rooms/21.jpg" data-fancybox="rhodes-robinson"
+                                data-caption="Rhodes-Robinson Detail 4">
+                                <img src="images/period-rooms/21.jpg" class="img-fluid" alt="Rhodes-Robinson Detail 4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <div class="footer">
+    <div class="pre_footer_outer">
+        <div class="container pre_footer_menu">
+            <a href="#">#TheGateMuseum</a>
+            <a href="#">News & Articles</a>
+            <a href="#">Internship Opportunities</a>
+            <a href="#">Volunteer Opportunities</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-4 py-4">
+                <h4 class="text-white mb-2">The Millennium Gate Museum</h4>
+                <p>395 17th St NW Atlanta GA 30363</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="text-white small text-decoration-underline">Buy Tickets</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-white small text-decoration-underline">View in Google Maps</a>
+                </div>
+
+                <div class="newsletter-form mt-5 mb-2">
+                    <h5 class="text-white mb-2 ff-body h6 fw-normal">Subscribe to our newsletter</h5>
+                    <form action="#">
+                        <div class="d-flex input-group">
+                            <input type="email" placeholder="Enter your email" class="form-control form-control-sm">
+                            <button type="submit" class="btn btn-sm btn-primary"><i class="ri-send-plane-fill"></i>
+                                <span class="d-none d-md-inline-block"> Subscribe</span></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-lg-5 offset-lg-3">
+                <div class="row">
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Museum</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Visit</a></li>
+                            <li><a href="#">Exhibitions</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Art</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">Permanent Collection</a></li>
+                            <li><a href="#">Temporary Exhibition</a></li>
+                            <li><a href="#">Period Rooms</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container post_footer">
+        <div class="py-2 text-sm">For facility rentals related inquiries <a href="#">click here</a></div>
+        <div class="social_icons py-2">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-fill"></i></a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright_inner">
+                <ul class="list-inline py-3">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Copyright</a></li>
+                </ul>
+                <div class="py-3">Website by <a href="#">Webmaddy</a></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+<!-- Scripts -->
+<script src="js/main.js"></script>
+    </div>
+
+</body>
+
+</html>

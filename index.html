@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Gate Museum">
+<meta name="keywords" content="bootstrap, gulp, sass, modern web design">
+<title>The Gate Museum</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+    <div>
+        <div class="page-reveal-transition">
+    <!-- this reveals after curtain reveals. it will be below the curtains -->
+    <div class="page-reveal-background"></div>
+
+    <!-- curtain reveal one by one, starting from 4th, then 3 and 5, then 2 and 6, then 1 and 7th -->
+    <div class="curtain">
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+    </div>
+    <div class="content-area">
+        <div class="mask">
+            <h5>Inspiring the future</h5>
+        </div>
+        <div class="loader-progress">
+            <div class="loader-line"></div>
+        </div>
+        <div class="loader-percentage">0%</div>
+    </div>
+</div>
+<div class="main-navigation fixed-top">
+    <div class="container-fluid">
+        <div class="navigation_inner">
+            <a href="index.html" class="brand_logo">
+                <img src="images/logo.svg" alt="The Gate Museum" class="brand_logo_image img-fluid">
+            </a>
+            <div class="navigation_menu ms-auto">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="buy-tickets.html">Tickets</a></li>
+                    <li><a href="facility-rental.html">Facility Rentals</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="humburger_menu">
+                <span>Menu</span>
+                <div class="humburger_icon">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="menu-overlay-bg"></div>
+<div class="offcanvas-menu-main">
+    <div class="bg-menu-overlay"></div>
+    <div class="close-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+            <path
+                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
+            </path>
+        </svg>
+    </div>
+    <div class="offcanvas-menu-inner">
+        <div class="top-grid-item">
+            <ul class="main-menu-items">
+                <li><span class="menu-title">The Museum</span>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li><span class="menu-title">The Art</span>
+                    <ul>
+                        <li><a href="collection.html">Permanent Collection</a></li>
+                        <li><a href="exhibitions.html">Temporary Exhibition</a></li>
+                        <li><a href="period-rooms.html">Period Rooms</a></li>
+                        <li><a href="statues-and-monuments.html">Statues & Monnuments</a></li>
+                        <li><a href="traveling-exhibitions.html">Travelling Exhibitions</a></li>
+                    </ul>
+                </li>
+                <li><a href="support.html">Support & Learn</a></li>
+                <li><a href="millennium-candler-gala.html">Candler Prize</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+        <main>
+            <div class="home_hero pt-lg-5">
+                <div class="hero_image">
+                    <div class="rotating-text">
+                        <svg viewBox="0 0 200 200" width="100" height="100">
+                            <defs>
+                                <path id="circlePath"
+                                    d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
+                            </defs>
+                            <text fill="currentColor">
+                                <textPath xlink:href="#circlePath">
+                                    WHERE HISTORY CONNECTS PEOPLE, INSPIRES CURIOSITY, AND BUILDS A SENSE OF COMMUNITY •
+                                </textPath>
+                            </text>
+                        </svg>
+                    </div>
+                    <img src="images/hero-image.webp" class="img-fluid" alt="...">
+                </div>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="pre_title mb-2">The Gate Museum <span class="line"></span></div>
+                            <h1 class="display-2">Inspiring the future through history</h1>
+                            <p class="text-lg subline mb-4 mt-3">Preserving Georgia's legacy of art, culture, and
+                                leadership for
+                                generations to
+                                come.</p>
+                            <a href="#" class="btn btn-primary my-2">Plan your Visit</a>
+                            <a href="#" class="icon-btn my-2" data-bs-toggle="modal" data-bs-target="#videoModal"><i
+                                    class="ri-play-fill"></i> <span class="text-decoration-underline">See a tour
+                                    video</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section pb-5">
+                <div class="container my-5">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <h2 class="h3 mb-4">Welcome to the Millennium Gate Museum, the <span
+                                    class="text-primary">second largest classical monument</span> in the USA, located in
+                                the heart of Atlanta.</h2>
+                            <p class="text-lg">Opened in 2008, the museum preserves and interprets Georgia history, art,
+                                culture and philanthropic heritage. It is a 501(c)(3) non-profit organization and winner
+                                of the Palladio Award for design of a public space.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section py-2">
+                <div class="infinite-slider">
+                    <div class="infinite-slider__track" aria-hidden="true">
+                        <div class="infinite-slider__item">
+
+                            <img src="images/scroll-image/img-1.jpg" alt="Museum exhibit" loading="lazy">
+
+                        </div>
+                        <div class="infinite-slider__item">
+
+                            <img src="images/scroll-image/img-2.jpg" alt="Museum artifact" loading="lazy">
+
+                        </div>
+                        <div class="infinite-slider__item">
+
+                            <img src="images/scroll-image/img-3.jpg" alt="Museum collection" loading="lazy">
+
+                        </div>
+                        <div class="infinite-slider__item">
+
+                            <img src="images/scroll-image/img-4.jpg" alt="Museum gallery" loading="lazy">
+
+                        </div>
+                        <div class="infinite-slider__item">
+
+                            <img src="images/scroll-image/img-5.jpg" alt="Museum exhibit" loading="lazy">
+
+                        </div>
+                        <div class="infinite-slider__item">
+
+                            <img src="images/scroll-image/img-6.jpg" alt="Museum architecture" loading="lazy">
+
+                        </div>
+                        <!-- Duplicate set for seamless loop -->
+                        <div class="infinite-slider__item">
+                            <img src="images/scroll-image/img-1.jpg" alt="" loading="lazy">
+                        </div>
+                        <div class="infinite-slider__item">
+                            <img src="images/scroll-image/img-2.jpg" alt="" loading="lazy">
+                        </div>
+                        <div class="infinite-slider__item">
+                            <img src="images/scroll-image/img-3.jpg" alt="" loading="lazy">
+                        </div>
+                        <div class="infinite-slider__item">
+                            <img src="images/scroll-image/img-4.jpg" alt="" loading="lazy">
+                        </div>
+                        <div class="infinite-slider__item">
+                            <img src="images/scroll-image/img-5.jpg" alt="" loading="lazy">
+                        </div>
+                        <div class="infinite-slider__item">
+                            <img src="images/scroll-image/img-6.jpg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-art-cards">
+                <div class="container-fluid my-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center mb-4">
+                            <div class="pre_title mb-2"><span class="line"></span> Art at the museum <span
+                                    class="line"></span></div>
+                            <h2 class="mb-3 js-split-text">Art that Moves, Stands, and Endures</h2>
+                        </div>
+                    </div>
+
+                    <div class="art-card-outer">
+                        <div class="art-card art-card-secondary">
+                            <div class="row h-100">
+                                <div class="col-lg-7 pe-lg-5">
+                                    <div class="content">
+                                        <div class="title-area">
+                                            <h3 class="h2">Preserved Stories</h3>
+                                        </div>
+                                        <div class="description-area">
+                                            <div class="description-inner">
+                                                <div class="pre_title mb-2 text-white">Permanent Collection</div>
+                                                <p class="mb-5">The Millennium Gate Museum is the most comprehensive
+                                                    museum of Georgia history in the state. Our collections cover
+                                                    Georgia's history from pre-Columbian era up until the present day.
+                                                </p>
+                                                <a href="#" class="btn-link text-white">See Collection <i
+                                                        class="ri-arrow-right-long-line"></i></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="art-card-image"><img src="images/cards/img-1.jpg" alt=""
+                                            class="img-fluid w-100 h-100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="art-card art-card-primary">
+                            <div class="row h-100">
+                                <div class="col-lg-7 pe-lg-5">
+                                    <div class="content">
+                                        <div class="title-area">
+                                            <h3 class="h2">Art Beyond The Gate</h3>
+                                        </div>
+                                        <div class="description-area">
+                                            <div class="description-inner">
+                                                <div class="pre_title mb-2 text-white">Travelling Exhibitions</div>
+                                                <p class="mb-5">The Millennium Gate Museum is the most comprehensive
+                                                    museum of Georgia history in the state. Our collections cover
+                                                    Georgia's history from pre-Columbian era up until the present day.
+                                                </p>
+                                                <a href="#" class="btn-link text-white">See Collection <i
+                                                        class="ri-arrow-right-long-line"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="art-card-image"><img src="images/cards/img-2.jpg" alt=""
+                                            class="img-fluid w-100 h-100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="art-card art-card-secondary">
+                            <div class="row h-100">
+                                <div class="col-lg-7 pe-lg-5">
+                                    <div class="content">
+                                        <div class="title-area">
+                                            <h3 class="h2">Sculpted Legacies</h3>
+                                        </div>
+                                        <div class="description-area">
+                                            <div class="description-inner">
+                                                <div class="pre_title mb-2 text-white">Statues and Monuments</div>
+                                                <p class="mb-5">Timeless works that commemorate history, culture, and
+                                                    collective memory.</p>
+                                                <a href="#" class="btn-link text-white">See Collection <i
+                                                        class="ri-arrow-right-long-line"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="art-card-image"><img src="images/cards/img-3.jpg" alt=""
+                                            class="img-fluid w-100 h-100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="art-card art-card-primary">
+                            <div class="row h-100">
+                                <div class="col-lg-7 pe-lg-5">
+                                    <div class="content">
+                                        <div class="title-area">
+                                            <h3 class="h2">Exhibitions in Focus</h3>
+                                        </div>
+                                        <div class="description-area">
+                                            <div class="description-inner">
+                                                <div class="pre_title mb-2 text-white">Temporary Exhibitions</div>
+                                                <p class="mb-5">The Millennium Gate Museum is the most comprehensive
+                                                    museum of Georgia history in the state. Our collections cover
+                                                    Georgia's history from pre-Columbian era up until the present day.
+                                                </p>
+                                                <a href="#" class="btn-link text-white">See Collection <i
+                                                        class="ri-arrow-right-long-line"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="art-card-image"><img src="images/cards/img-4.jpg" alt=""
+                                            class="img-fluid w-100 h-100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div class="section">
+            <div class="container my-5">
+                <div class="row title-area">
+                    <div class="col-lg-7">
+                        
+                    </div>
+                    <div class="col-lg-5 mb-4">
+                        <h2 class="mb-4">Period rooms designed to transport you across time and place.</h2>
+                        <a href="#" class="btn btn-primary">Go to Period Rooms</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+            <div class="section section-h-statue bg-light mt-lg-5 mt-0">
+                <div class="container my-2">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 ps-lg-5 my-4">
+                            <div class="pre_title">The Statue of Zeus at olymia <span class="line"></span></div>
+                            <h2 class="mb-2">Wonder of the Ancient World</h2>
+                            <p>Recreated for the exhibition “The Games: Ancient Olympia to Atlanta to Rio”, this
+                                representation is based on the most accurate historical and archaeological evidence
+                                available.</p>
+                            <a href="#" class="btn btn-secondary">More about the statue</a>
+                        </div>
+                        <div class="col-lg-7 offset-lg-1 my-4 pe-lg-5">
+                            <div class="statue-images">
+
+                                <img src="images/z-1.jpg" alt="Statue of Zeus at Olympia" class="img-fluid">
+
+
+                                <img src="images/zeus-small-pic.jpg" alt="Statue of Zeus at Olympia" class="img-fluid">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-h-venue">
+                <div class="venue-trail-wrap">
+                    <div class="venue-trail-content content">
+                        <div class="content__img">
+                            <div class="content__img-inner" style="background-image:url(images/home/image_trail_1.jpg)">
+                            </div>
+                        </div>
+                        <div class="content__img">
+                            <div class="content__img-inner" style="background-image:url(images/home/image_trail_2.jpg)">
+                            </div>
+                        </div>
+                        <div class="content__img">
+                            <div class="content__img-inner" style="background-image:url(images/home/image_trail_3.jpg)">
+                            </div>
+                        </div>
+                        <div class="content__img">
+                            <div class="content__img-inner" style="background-image:url(images/home/image_trail_4.jpg)">
+                            </div>
+                        </div>
+                        <div class="content__img">
+                            <div class="content__img-inner" style="background-image:url(images/home/image_trail_5.jpg)">
+                            </div>
+                        </div>
+                        <div class="content__img">
+                            <div class="content__img-inner" style="background-image:url(images/home/image_trail_6.jpg)">
+                            </div>
+                        </div>
+                        <div class="content__img">
+                            <div class="content__img-inner" style="background-image:url(images/home/image_trail_7.jpg)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container my-5 position-relative">
+                    <div class="row justify-content-center title-area">
+                        <div class="col-lg-8 text-center mb-4">
+                            <div class="pre_title text-white mb-3"><span class="line"></span> A timeless venue <span
+                                    class="line"></span></div>
+                            <h2 class="mb-4 text-white">Host unforgettable events in a setting where culture, elegance,
+                                and history come together.</h2>
+                            <a href="#" class="btn btn-primary ">Facility Rentals</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section admission-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-11 m-auto">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-6 my-3 text-lg-start text-center">
+                                    <div class="pre_title text-uppercase mb-3">
+                                        Hours and Admission <span class="line"></span>
+                                    </div>
+                                    <h2 class="h2 mb-5">
+                                        Your Visit to the <br />
+                                        Millennium Gate
+                                    </h2>
+
+                                    <div class="mb-5">
+                                        <p class="text-secondary mb-0 text-uppercase">
+                                            Sunday & Monday: Closed
+                                        </p>
+                                        <p class="text-secondary mb-3 text-uppercase">
+                                            Tuesday - Saturday: 10:00AM - 5:00PM
+                                        </p>
+
+                                        <p class="text-muted text-uppercase">
+                                            Exceptions are made for private events.
+                                        </p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-secondary text-uppercase">Plan Your Visit</a>
+                                </div>
+
+                                <div class="col-lg-6 my-3">
+                                    <div class="admission-image-wrapper">
+                                        <div class="d-flex justify-content-center">
+                                            <div class="arch-container position-relative d-flex justify-content-center">
+                                                <img src="images/admission.png" alt="Museum Archway"
+                                                    class="img-fluid w-75" />
+
+                                                <div class="ticket-box">
+                                                    <img src="images/ticket1.svg" alt="Buy Tickets"
+                                                        class="ticket-main" />
+                                                    <img src="images/ticket2.svg" alt="" class="ticket-bg" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="container my-5">
+                    <div class="row justify-content-center title-area">
+                        <div class="col-lg-8 text-center mb-4">
+                            <h2 class="mb-2">From our visitors and supporters</h2>
+                            <p>Real stories from visitors, supporters, and scholars who found inspiration through
+                                history.</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-grid">
+                        <div class="testimonial-item">
+                            <div class="author-info mb-3">
+                                <img src="images/google_icon.svg" alt="Google" class="google-icon">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://placehold.co/120x120" alt="David Horney"
+                                            class="img-fluid author-image">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <div class="author-name">David Horney</div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="star-rating">
+                                                <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                                    class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                                    class="ri-star-fill"></i>
+                                            </div>
+                                            <div class="location">Visitor, South Africa</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                An impressive classical monument right in the heart of Atlanta. The exhibitions are
+                                thoughtfully curated and the architecture is stunning. A must-visit for anyone
+                                interested in Georgia's heritage.
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="author-info mb-3">
+                                <img src="images/google_icon.svg" alt="Google" class="google-icon">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://placehold.co/120x120" alt="Amara Stegner"
+                                            class="img-fluid author-image">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <div class="author-name">Amara Stegner</div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="star-rating">
+                                                <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                                    class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                                    class="ri-star-fill"></i>
+                                            </div>
+                                            <div class="location">Teacher, Atlanta, Georgia</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                Brought my class here for a field trip and we were all blown away. The educational
+                                programs are outstanding—my students learned so much about Georgia history in an
+                                engaging way. The staff went above and beyond to make our visit special. Highly
+                                recommend for school groups!
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="author-info mb-3">
+                                <img src="images/google_icon.svg" alt="Google" class="google-icon">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://placehold.co/120x120" alt="Cameron Buris"
+                                            class="img-fluid author-image">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <div class="author-name">Cameron Buris</div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="star-rating">
+                                                <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                                    class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                                    class="ri-star-fill"></i>
+                                            </div>
+                                            <div class="location">Local Guide, Atlanta</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                Beautiful space and fascinating exhibits. The Palladio Award is well deserved—the design
+                                and attention to detail throughout the museum is remarkable. Perfect for a weekend visit
+                                when you want to explore something meaningful.
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="author-info mb-3">
+                                <img src="images/google_icon.svg" alt="Google" class="google-icon">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://placehold.co/120x120" alt="Christian Johannsen"
+                                            class="img-fluid author-image">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <div class="author-name">Christian Johannsen</div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="star-rating">
+                                                <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                                    class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                                    class="ri-star-fill"></i>
+                                            </div>
+                                            <div class="location">Student, Georgia</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                Cool hidden gem of a museum in Atlanta, with lots about the history of Georgia and great
+                                views of the city. Museum staff are very friendly and knowledgeable and were a joy to
+                                chat with during my visit. Totally recommend for something less touristy! By the way you
+                                can get 2 hour free parking in nearby Atlantic Station garage.
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="author-info mb-3">
+                                <img src="images/google_icon.svg" alt="Google" class="google-icon">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://placehold.co/120x120" alt="Vivian Rao"
+                                            class="img-fluid author-image">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <div class="author-name">Vivian Rao</div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="star-rating">
+                                                <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                                    class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                                    class="ri-star-fill"></i>
+                                            </div>
+                                            <div class="location">Visitor, California</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                Cool hidden gem of a museum in Atlanta, with lots about the history of Georgia and great
+                                views of the city. Museum staff are very friendly and knowledgeable and were a joy to
+                                chat with during my visit. Totally recommend for something less touristy!
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="author-info mb-3">
+                                <img src="images/google_icon.svg" alt="Google" class="google-icon">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="https://placehold.co/120x120" alt="Victor Williams"
+                                            class="img-fluid author-image">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <div class="author-name">Victor Williams</div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="star-rating">
+                                                <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                                    class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                                                    class="ri-star-fill"></i>
+                                            </div>
+                                            <div class="location">Historian, Georgia</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                A treasure for the city. The preservation of Georgia's philanthropic and cultural
+                                heritage here is exceptional.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+        <!-- Video Modal -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content bg-dark border-0">
+                    <div class="modal-header border-0 p-0">
+                        <button type="button" class="btn-close btn-close-white ms-auto p-3" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1" title="Tour Video"
+                                allowfullscreen id="tourVideo"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+    <div class="pre_footer_outer">
+        <div class="container pre_footer_menu">
+            <a href="#">#TheGateMuseum</a>
+            <a href="#">News & Articles</a>
+            <a href="#">Internship Opportunities</a>
+            <a href="#">Volunteer Opportunities</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-4 py-4">
+                <h4 class="text-white mb-2">The Millennium Gate Museum</h4>
+                <p>395 17th St NW Atlanta GA 30363</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="text-white small text-decoration-underline">Buy Tickets</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-white small text-decoration-underline">View in Google Maps</a>
+                </div>
+
+                <div class="newsletter-form mt-5 mb-2">
+                    <h5 class="text-white mb-2 ff-body h6 fw-normal">Subscribe to our newsletter</h5>
+                    <form action="#">
+                        <div class="d-flex input-group">
+                            <input type="email" placeholder="Enter your email" class="form-control form-control-sm">
+                            <button type="submit" class="btn btn-sm btn-primary"><i class="ri-send-plane-fill"></i>
+                                <span class="d-none d-md-inline-block"> Subscribe</span></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-lg-5 offset-lg-3">
+                <div class="row">
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Museum</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Visit</a></li>
+                            <li><a href="#">Exhibitions</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Art</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">Permanent Collection</a></li>
+                            <li><a href="#">Temporary Exhibition</a></li>
+                            <li><a href="#">Period Rooms</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container post_footer">
+        <div class="py-2 text-sm">For facility rentals related inquiries <a href="#">click here</a></div>
+        <div class="social_icons py-2">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-fill"></i></a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright_inner">
+                <ul class="list-inline py-3">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Copyright</a></li>
+                </ul>
+                <div class="py-3">Website by <a href="#">Webmaddy</a></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+<!-- Scripts -->
+<script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>

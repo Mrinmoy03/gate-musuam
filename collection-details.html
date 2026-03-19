@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore the permanent collection at the Millennium Gate Museum">
+<meta name="keywords" content="bootstrap, gulp, sass, modern web design">
+<title>Collection - The Gate Museum</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- Fancybox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.10/dist/fancybox/fancybox.css">
+
+
+</head>
+
+<body>
+    <div>
+        <div class="page-reveal-transition">
+    <!-- this reveals after curtain reveals. it will be below the curtains -->
+    <div class="page-reveal-background"></div>
+
+    <!-- curtain reveal one by one, starting from 4th, then 3 and 5, then 2 and 6, then 1 and 7th -->
+    <div class="curtain">
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+    </div>
+    <div class="content-area">
+        <div class="mask">
+            <h5>Inspiring the future</h5>
+        </div>
+        <div class="loader-progress">
+            <div class="loader-line"></div>
+        </div>
+        <div class="loader-percentage">0%</div>
+    </div>
+</div>
+<div class="main-navigation fixed-top">
+    <div class="container-fluid">
+        <div class="navigation_inner">
+            <a href="index.html" class="brand_logo">
+                <img src="images/logo.svg" alt="The Gate Museum" class="brand_logo_image img-fluid">
+            </a>
+            <div class="navigation_menu ms-auto">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="buy-tickets.html">Tickets</a></li>
+                    <li><a href="facility-rental.html">Facility Rentals</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="humburger_menu">
+                <span>Menu</span>
+                <div class="humburger_icon">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="menu-overlay-bg"></div>
+<div class="offcanvas-menu-main">
+    <div class="bg-menu-overlay"></div>
+    <div class="close-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+            <path
+                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
+            </path>
+        </svg>
+    </div>
+    <div class="offcanvas-menu-inner">
+        <div class="top-grid-item">
+            <ul class="main-menu-items">
+                <li><span class="menu-title">The Museum</span>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li><span class="menu-title">The Art</span>
+                    <ul>
+                        <li><a href="collection.html">Permanent Collection</a></li>
+                        <li><a href="exhibitions.html">Temporary Exhibition</a></li>
+                        <li><a href="period-rooms.html">Period Rooms</a></li>
+                        <li><a href="statues-and-monuments.html">Statues & Monnuments</a></li>
+                        <li><a href="traveling-exhibitions.html">Travelling Exhibitions</a></li>
+                    </ul>
+                </li>
+                <li><a href="support.html">Support & Learn</a></li>
+                <li><a href="millennium-candler-gala.html">Candler Prize</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+        <main>
+            <div class="page_hero pb-0">
+                <div class="container pt-5">
+                    <div class="row align-items-end">
+                        <div class="col-lg-6">
+                            <div class="pre_title mb-2">Collection <span class="line"></span></div>
+                            <h1 class="display-3 mb-3">Pre Columbian Georgia</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Collection</li>
+                                </ol>
+                            </nav>
+                            <p class="subline">The Millennium Gate Museum is the most comprehensive museum of Georgia
+                                history in the state. Our collections cover Georgia's history from pre-Columbian era up
+                                until the present day.</p>
+
+                        </div>
+                        <div class="col-lg-6 text-lg-end mb-3">
+                            <a href="#" class="btn btn-primary">Back to Collections</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container my-4">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="art-item mb-5">
+                                <a href="https://placehold.co/1200x1200" data-fancybox="collection"
+                                    data-caption="Rare book, Robert Castell's Villa of the Ancients" class="image">
+                                    <img src="https://placehold.co/600x600"
+                                        alt="Rare book, Robert Castell's Villa of the Ancients" class="img-fluid">
+
+                                    <div class="description">Native American pottery found near Ocmulgee Mounds, 2nd
+                                        century. From the collection of Bettijo Trawick.</div>
+                                </a>
+                                <h5>Rare book, Robert Castell's Villa of the Ancients</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="art-item mb-5">
+                                <a href="https://placehold.co/1200x1200" data-fancybox="collection"
+                                    data-caption="Rare book, Robert Castell's Villa of the Ancients" class="image">
+                                    <img src="https://placehold.co/600x600"
+                                        alt="Rare book, Robert Castell's Villa of the Ancients" class="img-fluid">
+                                    <div class="description">Native American pottery found near Ocmulgee Mounds, 2nd
+                                        century. From the collection of Bettijo Trawick.</div>
+                                </a>
+                                <h5>Rare book, Robert Castell's Villa of the Ancients</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="art-item mb-5">
+                                <a href="https://placehold.co/1200x1200" data-fancybox="collection"
+                                    data-caption="Rare book, Robert Castell's Villa of the Ancients" class="image">
+                                    <img src="https://placehold.co/600x600"
+                                        alt="Rare book, Robert Castell's Villa of the Ancients" class="img-fluid">
+                                    <div class="description">Native American pottery found near Ocmulgee Mounds, 2nd
+                                        century. From the collection of Bettijo Trawick.</div>
+                                </a>
+                                <h5>Rare book, Robert Castell's Villa of the Ancients</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="art-item mb-5">
+                                <a href="https://placehold.co/1200x1200" data-fancybox="collection"
+                                    data-caption="Rare book, Robert Castell's Villa of the Ancients" class="image">
+                                    <img src="https://placehold.co/600x600"
+                                        alt="Rare book, Robert Castell's Villa of the Ancients" class="img-fluid">
+                                    <div class="description">Native American pottery found near Ocmulgee Mounds, 2nd
+                                        century. From the collection of Bettijo Trawick.</div>
+                                </a>
+                                <h5>Rare book, Robert Castell's Villa of the Ancients</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="footer">
+    <div class="pre_footer_outer">
+        <div class="container pre_footer_menu">
+            <a href="#">#TheGateMuseum</a>
+            <a href="#">News & Articles</a>
+            <a href="#">Internship Opportunities</a>
+            <a href="#">Volunteer Opportunities</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-4 py-4">
+                <h4 class="text-white mb-2">The Millennium Gate Museum</h4>
+                <p>395 17th St NW Atlanta GA 30363</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="text-white small text-decoration-underline">Buy Tickets</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-white small text-decoration-underline">View in Google Maps</a>
+                </div>
+
+                <div class="newsletter-form mt-5 mb-2">
+                    <h5 class="text-white mb-2 ff-body h6 fw-normal">Subscribe to our newsletter</h5>
+                    <form action="#">
+                        <div class="d-flex input-group">
+                            <input type="email" placeholder="Enter your email" class="form-control form-control-sm">
+                            <button type="submit" class="btn btn-sm btn-primary"><i class="ri-send-plane-fill"></i>
+                                <span class="d-none d-md-inline-block"> Subscribe</span></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-lg-5 offset-lg-3">
+                <div class="row">
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Museum</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Visit</a></li>
+                            <li><a href="#">Exhibitions</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Art</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">Permanent Collection</a></li>
+                            <li><a href="#">Temporary Exhibition</a></li>
+                            <li><a href="#">Period Rooms</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container post_footer">
+        <div class="py-2 text-sm">For facility rentals related inquiries <a href="#">click here</a></div>
+        <div class="social_icons py-2">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-fill"></i></a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright_inner">
+                <ul class="list-inline py-3">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Copyright</a></li>
+                </ul>
+                <div class="py-3">Website by <a href="#">Webmaddy</a></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+<!-- Scripts -->
+<script src="js/main.js"></script>
+    </div>
+
+    <!-- Fancybox for collection gallery -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof Fancybox !== 'undefined') {
+                Fancybox.bind('[data-fancybox]', {});
+            }
+        });
+    </script>
+</body>
+
+</html>

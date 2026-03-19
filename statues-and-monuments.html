@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore the statues and monuments at the Millennium Gate Museum, Atlanta.">
+<meta name="keywords" content="bootstrap, gulp, sass, modern web design">
+<title>Statues and Monuments - The Gate Museum</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- Fancybox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.10/dist/fancybox/fancybox.css">
+
+
+</head>
+
+<body>
+    <div>
+        <div class="page-reveal-transition">
+    <!-- this reveals after curtain reveals. it will be below the curtains -->
+    <div class="page-reveal-background"></div>
+
+    <!-- curtain reveal one by one, starting from 4th, then 3 and 5, then 2 and 6, then 1 and 7th -->
+    <div class="curtain">
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+    </div>
+    <div class="content-area">
+        <div class="mask">
+            <h5>Inspiring the future</h5>
+        </div>
+        <div class="loader-progress">
+            <div class="loader-line"></div>
+        </div>
+        <div class="loader-percentage">0%</div>
+    </div>
+</div>
+<div class="main-navigation fixed-top">
+    <div class="container-fluid">
+        <div class="navigation_inner">
+            <a href="index.html" class="brand_logo">
+                <img src="images/logo.svg" alt="The Gate Museum" class="brand_logo_image img-fluid">
+            </a>
+            <div class="navigation_menu ms-auto">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="buy-tickets.html">Tickets</a></li>
+                    <li><a href="facility-rental.html">Facility Rentals</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="humburger_menu">
+                <span>Menu</span>
+                <div class="humburger_icon">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="menu-overlay-bg"></div>
+<div class="offcanvas-menu-main">
+    <div class="bg-menu-overlay"></div>
+    <div class="close-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+            <path
+                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
+            </path>
+        </svg>
+    </div>
+    <div class="offcanvas-menu-inner">
+        <div class="top-grid-item">
+            <ul class="main-menu-items">
+                <li><span class="menu-title">The Museum</span>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li><span class="menu-title">The Art</span>
+                    <ul>
+                        <li><a href="collection.html">Permanent Collection</a></li>
+                        <li><a href="exhibitions.html">Temporary Exhibition</a></li>
+                        <li><a href="period-rooms.html">Period Rooms</a></li>
+                        <li><a href="statues-and-monuments.html">Statues & Monnuments</a></li>
+                        <li><a href="traveling-exhibitions.html">Travelling Exhibitions</a></li>
+                    </ul>
+                </li>
+                <li><a href="support.html">Support & Learn</a></li>
+                <li><a href="millennium-candler-gala.html">Candler Prize</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+        <main class="statues-page">
+
+
+            <div class="page_hero pb-5">
+                <div class="container mt-5">
+                    <div class="row justify-content-between align-items-end">
+                        <div class="col-lg-12">
+                            <div class="pre_title mb-2">Permanent Installations <span class="line"></span></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="h1">Statues &amp; Monuments</h1>
+                        </div>
+                        <div class="col-lg-5">
+                            <p class="text-xlg serif-font text-muted">The museum houses a remarkable
+                                collection of bronze statues and stone monuments that celebrate
+                                pivotal figures and moments in global and local history.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section">
+                <div class="container">
+
+                    <div class="row g-4 mb-4" data-aos="fade-up">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="statue-card">
+                                <div class="card-thumb">
+                                    <a href="images/statues/1.jpg" data-fancybox="statues"
+                                        data-caption="<b>Statue of Cyrus the Great</b><br>Installed October 27, 2023. Commemorating the author of the world's first universal declaration of human rights, dedicated by Crown Prince Reza Pahlavi.">
+                                        <img src="images/statues/1.jpg" class="img-fluid"
+                                            alt="Statue of Cyrus the Great">
+                                    </a>
+                                    <span class="card-num">01</span>
+                                </div>
+                                <div class="card-body-inner">
+                                    <span class="card-category">Human Rights · 2023</span>
+                                    <h3 class="card-name">Statue of Cyrus the Great</h3>
+                                    <p class="card-text">Commemorating the author of the world's first universal
+                                        declaration of human rights, dedicated by Crown Prince Reza Pahlavi, son of the
+                                        last Shah of Iran.</p>
+                                    <a href="images/statues/1.jpg " data-fancybox="statues"
+                                        data-caption="<b>Statue of Cyrus the Great</b><br>Installed October 27, 2023."
+                                        class="card-cta">View in Detail <span class="arrow">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="statue-card">
+                                <div class="card-thumb">
+                                    <a href="images/statues/2.jpg" data-fancybox="statues"
+                                        data-caption="<b>The Statue of Zeus at Olympia</b><br>A groundbreaking 3D-printed recreation, commissioned by the Museum with Stratasys and 3DPTree, replicating the lost ancient wonder.">
+                                        <img src="images/statues/2.jpg" alt="The Statue of Zeus at Olympia">
+                                    </a>
+                                    <span class="card-num">02</span>
+                                </div>
+                                <div class="card-body-inner">
+                                    <span class="card-category">Ancient Wonder</span>
+                                    <h3 class="card-name">The Statue of Zeus at Olympia</h3>
+                                    <p class="card-text">A 3D-printed recreation of the lost wonder, originally made of
+                                        wood, ivory, and gold — lost in a fire at the Palace of Lausus.</p>
+                                    <a href="images/statues/2.jpg" data-fancybox="statues"
+                                        data-caption="<b>The Statue of Zeus at Olympia</b><br>3D-printed recreation."
+                                        class="card-cta">View in Detail <span class="arrow">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="statue-card">
+                                <div class="card-thumb">
+                                    <a href="images/statues/3.jpg " data-fancybox="statues"
+                                        data-caption="<b>Hungarian Freedom Fighter</b><br>By sculptor Stan Mullins of Athens, Georgia. In honor of the freedom fighters of the Hungarian Revolution of 1956, inspired by 15-year-old Erika Szeles.">
+                                        <img src="images/statues/3.jpg" alt="Hungarian Freedom Fighter">
+                                    </a>
+                                    <span class="card-num">03</span>
+                                </div>
+                                <div class="card-body-inner">
+                                    <span class="card-category">Heroism · Stan Mullins</span>
+                                    <h3 class="card-name">Hungarian Freedom Fighter</h3>
+                                    <p class="card-text">In honor of the fighters of the 1956 Hungarian Revolution,
+                                        inspired by Erika Szeles, a 15-year-old nurse and freedom fighter.</p>
+                                    <a href="images/statues/3.jpg" data-fancybox="statues"
+                                        data-caption="<b>Hungarian Freedom Fighter</b><br>By Stan Mullins."
+                                        class="card-cta">View in Detail <span class="arrow">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row g-4 mb-4" data-aos="fade-up" data-aos-delay="50">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="statue-card">
+                                <div class="card-thumb">
+                                    <a href="images/statues/4.jpg " data-fancybox="statues"
+                                        data-caption="<b>Chief Tomochichi of the Yamacraw Tribe</b><br>Regarded as the co-founder of Georgia, Tomochichi received General James Oglethorpe and the original colonists in peace in 1733.">
+                                        <img src="images/statues/4.jpg" alt="Chief Tomochichi">
+                                    </a>
+                                    <span class="card-num">04</span>
+                                </div>
+                                <div class="card-body-inner">
+                                    <span class="card-category">Colonial History</span>
+                                    <h3 class="card-name">Chief Tomochichi</h3>
+                                    <p class="card-text">Co-founder of Georgia who welcomed General Oglethorpe and the
+                                        original colonists with peace and diplomacy in 1733.</p>
+                                    <a href="images/statues/4.jpg " data-fancybox="statues"
+                                        data-caption="<b>Chief Tomochichi</b><br>Yamacraw Tribe, co-founder of Georgia."
+                                        class="card-cta">View in Detail <span class="arrow">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="statue-card">
+                                <div class="card-thumb">
+                                    <a href="images/statues/5.jpg" data-fancybox="statues"
+                                        data-caption="<b>Peace and Justice Gate</b><br>By Alexander Stoddart. Greco-Roman style depictions of Dike (Justice) and Eirene (Peace), daughters of Zeus and Themis.">
+                                        <img src="images/statues/5.jpg " alt="Peace and Justice Gate">
+                                    </a>
+                                    <span class="card-num">05</span>
+                                </div>
+                                <div class="card-body-inner">
+                                    <span class="card-category">Civic Virtue · A. Stoddart</span>
+                                    <h3 class="card-name">Peace &amp; Justice Gate</h3>
+                                    <p class="card-text">Classical bronzes of Dike (Justice) and Eirene (Peace) —
+                                        daughters of Zeus and Themis — standing as eternal guardians of civic values.
+                                    </p>
+                                    <a href="images/statues/5.jpg " data-fancybox="statues"
+                                        data-caption="<b>Peace and Justice Gate</b><br>By Alexander Stoddart."
+                                        class="card-cta">View in Detail <span class="arrow">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="statue-card">
+                                <div class="card-thumb">
+                                    <a href="images/statues/6.jpg" data-fancybox="statues"
+                                        data-caption="<b>Bust of José Martí</b><br>Poet, philosopher, and political theorist whose works inspired the Cuban Revolution in the late nineteenth century.">
+                                        <img src="images/statues/6.jpg" alt="José Martí">
+                                    </a>
+                                    <span class="card-num">06</span>
+                                </div>
+                                <div class="card-body-inner">
+                                    <span class="card-category">Literature &amp; Liberty</span>
+                                    <h3 class="card-name">Bust of José Martí</h3>
+                                    <p class="card-text">A tribute to the Apostle of Cuban Independence — poet,
+                                        philosopher, and political theorist who united his nation.</p>
+                                    <a href="images/statues/6.jpg" data-fancybox="statues"
+                                        data-caption="<b>Bust of José Martí</b><br>Apostle of Cuban Independence."
+                                        class="card-cta">View in Detail <span class="arrow">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="statue-card">
+                                <div class="card-thumb">
+                                    <a href="images/statues/7.jpg " data-fancybox="statues"
+                                        data-caption="<b>SGT Preston Tribble Memorial</b><br>Vietnam Veterans Memorial Monument and Decorations, honoring Atlanta's Vietnam veterans and those killed in action.">
+                                        <img src="images/statues/7.jpg" alt="SGT Preston Tribble">
+                                    </a>
+                                    <span class="card-num">07</span>
+                                </div>
+                                <div class="card-body-inner">
+                                    <span class="card-category">Vietnam Veterans</span>
+                                    <h3 class="card-name">SGT Preston Tribble</h3>
+                                    <p class="card-text">Atlanta's Vietnam Veterans Memorial monuments and decorations,
+                                        honoring those who served and the fallen.</p>
+                                    <a href="images/statues/7.jpg" data-fancybox="statues"
+                                        data-caption="<b>SGT Preston Tribble</b><br>Vietnam Veterans Memorial."
+                                        class="card-cta">View in Detail <span class="arrow">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="statue-card">
+                                <div class="card-thumb">
+                                    <a href="images/statues/8.jpg " data-fancybox="statues"
+                                        data-caption="<b>Abraham Lincoln</b><br>By Martin Dawe. Honoring the 16th President and Georgia's pivotal role in his 1864 re-election through General Sherman's Atlanta campaign.">
+                                        <img src="images/statues/8.jpg" alt="Abraham Lincoln">
+                                    </a>
+                                    <span class="card-num">08</span>
+                                </div>
+                                <div class="card-body-inner">
+                                    <span class="card-category">Presidential · Martin Dawe</span>
+                                    <h3 class="card-name text-dark">Abraham Lincoln</h3>
+                                    <p class="card-text">Commemorating the 16th President. Georgia's role in his 1864
+                                        re-election was pivotal, secured by Sherman's Atlanta campaign.</p>
+                                    <a href="images/statues/8.jpg" data-fancybox="statues"
+                                        data-caption="<b>Abraham Lincoln</b><br>By Martin Dawe." class="card-cta">View
+                                        in Detail <span class="arrow">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="statue-card">
+                                <div class="card-thumb">
+                                    <a href="images/statues/9.jpg" data-fancybox="statues"
+                                        data-caption="<b>George Washington</b><br>Bronze bust by George Kelley. Washington toured Georgia on several occasions and was particularly fond of Savannah.">
+                                        <img src="images/statues/9.jpg" alt="George Washington">
+                                    </a>
+                                    <span class="card-num">09</span>
+                                </div>
+                                <div class="card-body-inner">
+                                    <span class="card-category">Founding Father · G. Kelley</span>
+                                    <h3 class="card-name">George Washington</h3>
+                                    <p class="card-text">A bronze bust commemorating the first President's deep affinity
+                                        for the state of Georgia and the city of Savannah.</p>
+                                    <a href="images/statues/9.jpg" data-fancybox="statues"
+                                        data-caption="<b>George Washington</b><br>By George Kelley."
+                                        class="card-cta">View in Detail <span class="arrow">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="section-divider">
+
+                    <div class="row g-5 align-items-center" data-aos="fade-up">
+                        <div class="col-lg-6">
+                            <a href="images/statues/10.jpg " data-fancybox="statues"
+                                data-caption="<b>Heroic Spirit</b><br>By Frederick Hart. An enlargement of the central figure of a planned 14-foot monument. Hart is celebrated for the Vietnam Memorial soldier group and the National Cathedral tympanum.">
+                                <div class="statue-card statue-card-featured mb-0">
+                                    <div class="card-thumb">
+                                        <img src="images/statues/10.jpg" alt="Heroic Spirit by Frederick Hart">
+                                        <span class="card-num">10</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 ps-lg-5 spotlight-text">
+                            <div class="pre_title mb-3">Featured Work <span class="line"></span></div>
+                            <h2 class="h1 mb-4">Heroic Spirit</h2>
+                            <p class="mb-3">An enlargement of the central figure of a monumental work by the august
+                                American sculptor Frederick Hart. Hart gifted this maquette to his friend Rodney Mims
+                                Cook, Jr. of the National Monuments Foundation, intending a proposed 14-foot work to be
+                                built in Atlanta.</p>
+                            <p class="mb-5 text-muted">Hart is most celebrated for the Vietnam Memorial soldier group at
+                                the Maya Lin wall, the National Cathedral central doorway tympanum, and President Jimmy
+                                Carter on the State Capitol Grounds in Atlanta.</p>
+                            <a href="images/statues/10.jpg" data-fancybox="statues"
+                                data-caption="<b>Heroic Spirit</b><br>By Frederick Hart." class="btn btn-primary">
+                                View Full Image
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <div class="footer">
+    <div class="pre_footer_outer">
+        <div class="container pre_footer_menu">
+            <a href="#">#TheGateMuseum</a>
+            <a href="#">News & Articles</a>
+            <a href="#">Internship Opportunities</a>
+            <a href="#">Volunteer Opportunities</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-4 py-4">
+                <h4 class="text-white mb-2">The Millennium Gate Museum</h4>
+                <p>395 17th St NW Atlanta GA 30363</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="text-white small text-decoration-underline">Buy Tickets</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-white small text-decoration-underline">View in Google Maps</a>
+                </div>
+
+                <div class="newsletter-form mt-5 mb-2">
+                    <h5 class="text-white mb-2 ff-body h6 fw-normal">Subscribe to our newsletter</h5>
+                    <form action="#">
+                        <div class="d-flex input-group">
+                            <input type="email" placeholder="Enter your email" class="form-control form-control-sm">
+                            <button type="submit" class="btn btn-sm btn-primary"><i class="ri-send-plane-fill"></i>
+                                <span class="d-none d-md-inline-block"> Subscribe</span></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-lg-5 offset-lg-3">
+                <div class="row">
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Museum</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Visit</a></li>
+                            <li><a href="#">Exhibitions</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Art</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">Permanent Collection</a></li>
+                            <li><a href="#">Temporary Exhibition</a></li>
+                            <li><a href="#">Period Rooms</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container post_footer">
+        <div class="py-2 text-sm">For facility rentals related inquiries <a href="#">click here</a></div>
+        <div class="social_icons py-2">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-fill"></i></a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright_inner">
+                <ul class="list-inline py-3">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Copyright</a></li>
+                </ul>
+                <div class="py-3">Website by <a href="#">Webmaddy</a></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+<!-- Scripts -->
+<script src="js/main.js"></script>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof Fancybox !== 'undefined') {
+                Fancybox.bind('[data-fancybox="statues"]', {
+                    Html: { videoTpl: false }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

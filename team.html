@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Meet the team at the Millennium Gate Museum">
+<meta name="keywords" content="bootstrap, gulp, sass, modern web design">
+<title>Team - The Gate Museum</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- Fancybox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.10/dist/fancybox/fancybox.css">
+
+
+</head>
+
+<body>
+    <div>
+        <div class="page-reveal-transition">
+    <!-- this reveals after curtain reveals. it will be below the curtains -->
+    <div class="page-reveal-background"></div>
+
+    <!-- curtain reveal one by one, starting from 4th, then 3 and 5, then 2 and 6, then 1 and 7th -->
+    <div class="curtain">
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+    </div>
+    <div class="content-area">
+        <div class="mask">
+            <h5>Inspiring the future</h5>
+        </div>
+        <div class="loader-progress">
+            <div class="loader-line"></div>
+        </div>
+        <div class="loader-percentage">0%</div>
+    </div>
+</div>
+<div class="main-navigation fixed-top">
+    <div class="container-fluid">
+        <div class="navigation_inner">
+            <a href="index.html" class="brand_logo">
+                <img src="images/logo.svg" alt="The Gate Museum" class="brand_logo_image img-fluid">
+            </a>
+            <div class="navigation_menu ms-auto">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="buy-tickets.html">Tickets</a></li>
+                    <li><a href="facility-rental.html">Facility Rentals</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="humburger_menu">
+                <span>Menu</span>
+                <div class="humburger_icon">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="menu-overlay-bg"></div>
+<div class="offcanvas-menu-main">
+    <div class="bg-menu-overlay"></div>
+    <div class="close-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+            <path
+                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
+            </path>
+        </svg>
+    </div>
+    <div class="offcanvas-menu-inner">
+        <div class="top-grid-item">
+            <ul class="main-menu-items">
+                <li><span class="menu-title">The Museum</span>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li><span class="menu-title">The Art</span>
+                    <ul>
+                        <li><a href="collection.html">Permanent Collection</a></li>
+                        <li><a href="exhibitions.html">Temporary Exhibition</a></li>
+                        <li><a href="period-rooms.html">Period Rooms</a></li>
+                        <li><a href="statues-and-monuments.html">Statues & Monnuments</a></li>
+                        <li><a href="traveling-exhibitions.html">Travelling Exhibitions</a></li>
+                    </ul>
+                </li>
+                <li><a href="support.html">Support & Learn</a></li>
+                <li><a href="millennium-candler-gala.html">Candler Prize</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+        <main>
+            <div class="page_hero pb-4">
+                <div class="container mt-5">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-12">
+                            <div class="pre_title mb-2">Meet the Team <span class="line"></span></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="h1 js-split-text">Highest standards of excellence</h2>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="text-md">Led by Founder & President Rodney Cook Jr., our leadership team strives
+                                to carry out the Museum’s mission with the highest standards of excellence,
+                                authenticity, professionalism, and fiscal responsibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-team">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between mb-5">
+                        <div class="col-lg-4 my-3">
+                            <img src="images/team/founder-big.jpg" alt="Rodney Mims Cook, Jr."
+                                class="img-fluid img-team">
+                        </div>
+                        <div class="col-lg-8 my-3 ps-lg-5 ps-3">
+                            <h2 class="h4 mb-3">Rodney Mims Cook, Jr.</h2>
+                            <p class="card-text text-primary">Founder and President</p>
+                            <p>Rodney Mims Cook, Jr. is a graduate of Washington and Lee University. He is a scholar of
+                                the American Academy in Rome. At the age of 15, he initiated the campaign to
+                                successfully save the 5000+ seat Fox Theatre and in 1974 was a White House intern. In
+                                1982, he established Rodney M. Cook Interests, a design/development company. In 1987, he
+                                established PolitesCook Architects which designed the Newington Cropsey Museum, NY,
+                                housing the largest American collection of Hudson River School paintings (Arthur Ross
+                                Award to founder).</p>
+                            <!-- <a href="javascript:void(0)" class="text-primary small text-decoration-underline">View full profile</a> -->
+                        </div>
+
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- <div class="col-md-3">
+                            <div class="card h-100 border-0">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="">
+                                        <img src="images/team/founder.jpg" class="card-img-top" alt="...">
+                                        <div class="team_arrow position-absolute">
+                                            <div class="btn btn-primary rounded-circle team-member-trigger">
+                                                <img src="images/arrow.svg" alt="" class="img-fluid position-absolute top-50 start-50 translate-middle">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h5 class="card-title">Rodney Mims Cook, Jr.</h5>
+                                    <p class="card-text text-primary">Founder and President</p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="col-md-3">
+                            <div class="card h-100 border-0 team-area team-box" data-team-name="Mac Schmitz"
+                                data-team-role="Executive Director">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/team/mac-photo.jpg" class="card-img-top img-team"
+                                            alt="Mac Schmitz">
+                                        <div class="team_arrow position-absolute">
+                                            <div class="btn btn-primary rounded-circle team-member-trigger">
+                                                <img src="images/arrow.svg" alt=""
+                                                    class="img-fluid position-absolute top-50 start-50 translate-middle">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h5 class="card-title">Mac Schmitz</h5>
+                                    <p class="card-text text-primary">Executive Director</p>
+                                </div>
+                                <div class="d-none">
+                                    <div class="team-details">
+                                        <p class="text-primary team-designation">Executive Director</p>
+                                        <p>Mac Schmitz is the Executive Director of the National Monuments Foundation,
+                                            parent organization of the Millennium Gate Museum. He received a BA in
+                                            Environmental Studies from Rollins College in 2012 with a focus on
+                                            sustainable urban development. He began working on Rodney Cook Sr. Peace
+                                            Park with the National Monuments Foundation in 2012 incorporating plans for
+                                            urban farming and community revitalization. He has since been working with
+                                            the foundation to inspire a global peace movement through the example of
+                                            Georgia's history of peacemakers. He is a resident of Peachtree Corners and
+                                            is also an accomplished drummer and professional musician.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100 border-0 team-area team-box" data-team-name="Padmini Singh Sharma"
+                                data-team-role="Head of Strategy">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/team/padminisinghsharma.jpeg" class="card-img-top img-team"
+                                            alt="Padmini Singh Sharma">
+                                        <div class="team_arrow position-absolute">
+                                            <div class="btn btn-primary rounded-circle team-member-trigger">
+                                                <img src="images/arrow.svg" alt=""
+                                                    class="img-fluid position-absolute top-50 start-50 translate-middle">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h5 class="card-title">Padmini Singh Sharma</h5>
+                                    <p class="card-text text-primary">Head of Strategy</p>
+                                </div>
+                                <div class="d-none">
+                                    <div class="team-details">
+                                        <p class="text-primary team-designation">Head of Strategy</p>
+                                        <p>Padmini Singh Sharma is a conservationist and a passionate brand builder. She
+                                            believes in the power of brands to be both a force for good and growth
+                                            through ethical responsibility, community impact, diversity, inclusion, and
+                                            environmental sustainability. Padmini has significant experience in
+                                            Corporate Social Responsibility and Brand Management for organizations such
+                                            as The Nobel Foundation, US Olympic Association, NUUN Jewels, Mayo Clinic,
+                                            etc. Her experience growing up in India, and executing client projects
+                                            across North America, Europe, China and India, have lent Padmini an
+                                            international perspective. She currently serves as the Strategy Director for
+                                            The National Monuments Foundation and is responsible for executing its
+                                            mission of peace and civil equality. While at IMG, her project, “The
+                                            Honeywell-Nobel Initiative", a multi-country education program, won the Gold
+                                            Sabre Award. Padmini is a resident of Atlanta, where she lives with her
+                                            husband and two children.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100 border-0 team-area team-box" data-team-name="Richard Kerfoot"
+                                data-team-role="Museum Director">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/team/richard.jpg" class="card-img-top img-team"
+                                            alt="Richard Kerfoot">
+                                        <div class="team_arrow position-absolute">
+                                            <div class="btn btn-primary rounded-circle team-member-trigger">
+                                                <img src="images/arrow.svg" alt=""
+                                                    class="img-fluid position-absolute top-50 start-50 translate-middle">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h5 class="card-title">Richard Kerfoot</h5>
+                                    <p class="card-text text-primary">Museum Director</p>
+                                </div>
+                                <div class="d-none">
+                                    <div class="team-details">
+                                        <p class="text-primary team-designation">Museum Director</p>
+                                        <p>Richard Kerfoot started with the Millennium Gate Museum as a research intern
+                                            in 2014, and has been with the Museum ever since; now the Museum Director,
+                                            Richard oversees the museum’s collection, supervises and negotiates the
+                                            exchange or loan of artifacts, and organizes exhibitions, along with also
+                                            managing building operations. He holds a Bachelor of Sciences in Public
+                                            Policy from Georgia Tech, as well as an Associate of Sciences in Criminal
+                                            Justice from Georgia State University Perimeter College. A proud nerd, in
+                                            his spare time he enjoys a plethora of science fiction and fantasy media -
+                                            including Star Trek, Lord of the Rings, and the tabletop role-playing game
+                                            Dungeons & Dragons, among others - and is a member of the LARP and cosplay
+                                            communities. He currently lives in the Atlanta metro area with his
+                                            girlfriend and their dog.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card h-100 border-0 team-area team-box" data-team-name="Mike Russell"
+                                data-team-role="Events Director">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/team/mike.jpg" class="card-img-top img-team"
+                                            alt="Mike Russell">
+                                        <div class="team_arrow position-absolute">
+                                            <div class="btn btn-primary rounded-circle team-member-trigger">
+                                                <img src="images/arrow.svg" alt=""
+                                                    class="img-fluid position-absolute top-50 start-50 translate-middle">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-body px-0">
+                                    <h5 class="card-title">Mike Russell</h5>
+                                    <p class="card-text text-primary">Events Director</p>
+                                </div>
+                                <div class="d-none">
+                                    <div class="team-details">
+                                        <p class="text-primary team-designation">Events Director</p>
+                                        <p>Mike Russell is a combat veteran who served our country for almost 30 years
+                                            in the US Army. A native of Oklahoma, he has lived and worked in numerous
+                                            countries. He and his husband move to Atlanta from Europe. He has continued
+                                            his service to others here volunteering to work with the homeless and
+                                            supporting organizations that intervene with troubled youth. He organized
+                                            events honoring Ambassador Andrew Young for his 90th birthday celebration, a
+                                            public tribute to Queen Elizabeth II at her passing, the Nigerian
+                                            celebration of their 60th Anniversary of independence and the MLK Peace Walk
+                                            and statue unveiling commemorating the 55th Anniversary of his Mountaintop
+                                            Speech and memorializing the 55th anniversary of his assassination.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <h2 class="h3">Opened in 2008, the museum preserves and interprets <span
+                                    class="text-primary">Georgia history, art, culture and philanthropic
+                                    heritage</span>. It is a 501(c)(3) non-profit organization and winner of the
+                                Palladio Award for design of a public space.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-gallery">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="grid js-gallery-grid" id="facility-gallery">
+                                <div class="grid-sizer"></div>
+                                <div class="grid-item">
+                                    <a href="images/teambusy/intern-mgm.jpg" class="text-dark"
+                                        data-fancybox="team-gallery"
+                                        data-caption="Thanking our summer interns from the Atlanta International School">
+                                        <img src="images/teambusy/intern-mgm.jpg" class="img-fluid rounded" alt="">
+                                        <p>Thanking our summer interns from the Atlanta International School</p>
+                                    </a>
+                                </div>
+                                <div class="grid-item">
+                                    <a href="images/teambusy/img08.jpg" class="text-dark" data-fancybox="team-gallery"
+                                        data-caption="Thanking our summer interns from the Atlanta International School">
+                                        <img src="images/teambusy/img08.jpg" class="img-fluid rounded" alt="">
+                                        <p>Thanking our summer interns from the Atlanta International School</p>
+                                    </a>
+                                </div>
+                                <div class="grid-item">
+                                    <a href="images/teambusy/zupan.jpg" class="text-dark" data-fancybox="team-gallery"
+                                        data-caption="Thanking our summer interns from the Atlanta International School">
+                                        <img src="images/teambusy/zupan.jpg" class="img-fluid rounded" alt="">
+                                        <p>Thanking our summer interns from the Atlanta International School</p>
+                                    </a>
+                                </div>
+                                <div class="grid-item">
+                                    <a href="images/teambusy/img06.jpg" class="text-dark" data-fancybox="team-gallery"
+                                        data-caption="Thanking our summer interns from the Atlanta International School">
+                                        <img src="images/teambusy/img06.jpg" class="img-fluid rounded" alt="">
+                                        <p>Thanking our summer interns from the Atlanta International School</p>
+                                    </a>
+                                </div>
+                                <div class="grid-item">
+                                    <a href="images/teambusy/img07.jpg" class="text-dark" data-fancybox="team-gallery"
+                                        data-caption="Thanking our summer interns from the Atlanta International School">
+                                        <img src="images/teambusy/img07.jpg" class="img-fluid rounded" alt="">
+                                        <p>Thanking our summer interns from the Atlanta International School</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team modal popover (GSAP) -->
+            <div class="team-modal" id="team-modal" aria-hidden="true"
+                style="background-image:url('img/modal-bg.jpg');">
+                <div class="large-circle"></div>
+                <div class="tm-inner" role="dialog" aria-modal="true" aria-labelledby="tm-name">
+                    <a href="javascript:void(0)" class="tm-close" aria-label="Close"><i class="ri-close-line"></i></a>
+                    <div class="tm-image">
+                        <div class="tm-image-inner">
+                            <img src="" alt="" class="tm-picture" id="tm-picture">
+                        </div>
+                    </div>
+                    <div class="tm-content">
+                        <h6 id="tm-name"></h6>
+                        <div id="tm-content"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer">
+    <div class="pre_footer_outer">
+        <div class="container pre_footer_menu">
+            <a href="#">#TheGateMuseum</a>
+            <a href="#">News & Articles</a>
+            <a href="#">Internship Opportunities</a>
+            <a href="#">Volunteer Opportunities</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-4 py-4">
+                <h4 class="text-white mb-2">The Millennium Gate Museum</h4>
+                <p>395 17th St NW Atlanta GA 30363</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="text-white small text-decoration-underline">Buy Tickets</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-white small text-decoration-underline">View in Google Maps</a>
+                </div>
+
+                <div class="newsletter-form mt-5 mb-2">
+                    <h5 class="text-white mb-2 ff-body h6 fw-normal">Subscribe to our newsletter</h5>
+                    <form action="#">
+                        <div class="d-flex input-group">
+                            <input type="email" placeholder="Enter your email" class="form-control form-control-sm">
+                            <button type="submit" class="btn btn-sm btn-primary"><i class="ri-send-plane-fill"></i>
+                                <span class="d-none d-md-inline-block"> Subscribe</span></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-lg-5 offset-lg-3">
+                <div class="row">
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Museum</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Visit</a></li>
+                            <li><a href="#">Exhibitions</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Art</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">Permanent Collection</a></li>
+                            <li><a href="#">Temporary Exhibition</a></li>
+                            <li><a href="#">Period Rooms</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container post_footer">
+        <div class="py-2 text-sm">For facility rentals related inquiries <a href="#">click here</a></div>
+        <div class="social_icons py-2">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-fill"></i></a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright_inner">
+                <ul class="list-inline py-3">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Copyright</a></li>
+                </ul>
+                <div class="py-3">Website by <a href="#">Webmaddy</a></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+<!-- Scripts -->
+<script src="js/main.js"></script>
+    </div>
+
+
+    <!-- Fancybox for team gallery -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof Fancybox !== 'undefined') {
+                Fancybox.bind('[data-fancybox]', {});
+            }
+        });
+    </script>
+</body>
+
+</html>

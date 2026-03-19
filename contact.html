@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact the Millennium Gate Museum in Atlanta, Georgia">
+<meta name="keywords" content="bootstrap, gulp, sass, modern web design">
+<title>Contact - The Gate Museum</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+    <div>
+        <div class="page-reveal-transition">
+    <!-- this reveals after curtain reveals. it will be below the curtains -->
+    <div class="page-reveal-background"></div>
+
+    <!-- curtain reveal one by one, starting from 4th, then 3 and 5, then 2 and 6, then 1 and 7th -->
+    <div class="curtain">
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+    </div>
+    <div class="content-area">
+        <div class="mask">
+            <h5>Inspiring the future</h5>
+        </div>
+        <div class="loader-progress">
+            <div class="loader-line"></div>
+        </div>
+        <div class="loader-percentage">0%</div>
+    </div>
+</div>
+<div class="main-navigation fixed-top">
+    <div class="container-fluid">
+        <div class="navigation_inner">
+            <a href="index.html" class="brand_logo">
+                <img src="images/logo.svg" alt="The Gate Museum" class="brand_logo_image img-fluid">
+            </a>
+            <div class="navigation_menu ms-auto">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="buy-tickets.html">Tickets</a></li>
+                    <li><a href="facility-rental.html">Facility Rentals</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="humburger_menu">
+                <span>Menu</span>
+                <div class="humburger_icon">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="menu-overlay-bg"></div>
+<div class="offcanvas-menu-main">
+    <div class="bg-menu-overlay"></div>
+    <div class="close-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+            <path
+                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
+            </path>
+        </svg>
+    </div>
+    <div class="offcanvas-menu-inner">
+        <div class="top-grid-item">
+            <ul class="main-menu-items">
+                <li><span class="menu-title">The Museum</span>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li><span class="menu-title">The Art</span>
+                    <ul>
+                        <li><a href="collection.html">Permanent Collection</a></li>
+                        <li><a href="exhibitions.html">Temporary Exhibition</a></li>
+                        <li><a href="period-rooms.html">Period Rooms</a></li>
+                        <li><a href="statues-and-monuments.html">Statues & Monnuments</a></li>
+                        <li><a href="traveling-exhibitions.html">Travelling Exhibitions</a></li>
+                    </ul>
+                </li>
+                <li><a href="support.html">Support & Learn</a></li>
+                <li><a href="millennium-candler-gala.html">Candler Prize</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+        <div class="nav-margin"></div>
+
+        <main>
+
+            <div class="page_hero pb-4">
+                <div class="container mt-5">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-12">
+                            <div class="pre_title mb-2">Get in Touch <span class="line"></span></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="h1">Visit or Contact Us</h1>
+                        </div>
+                        <div class="col-lg-5">
+                            <p class="text-lg">Whether you have questions about visiting, hosting events, or learning
+                                more about our mission, we're here to help.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="section pb-0">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-12">
+                            <div class="pre_title mb-2">Get in Touch <span class="line"></span></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="h1">Visit or Contact Us</h1>
+                        </div>
+                        <div class="col-lg-5">
+                            <p class="text-lg">Whether you have questions about visiting, hosting events, or learning
+                                more about our mission, we're here to help.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div class="section pt-5">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="bg-primary p-4 h-100 d-flex flex-column justify-content-between gap-5 contact-box">
+                                <div class="text-white mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" viewBox="0 0 256 256"><path d="M200,228H139.72A263.66,263.66,0,0,0,171,197.62c26.81-30.83,41-63.2,41-93.62a84,84,0,0,0-168,0c0,30.42,14.17,62.79,41,93.62A263.66,263.66,0,0,0,116.28,228H56a4,4,0,0,0,0,8H200a4,4,0,0,0,0-8ZM90.9,192.23C73.15,171.8,52,139.9,52,104a76,76,0,0,1,152,0c0,35.9-21.15,67.8-38.9,88.23A254.62,254.62,0,0,1,128,227,254.62,254.62,0,0,1,90.9,192.23ZM164,104a36,36,0,1,0-36,36A36,36,0,0,0,164,104Zm-64,0a28,28,0,1,1,28,28A28,28,0,0,1,100,104Z"></path></svg>
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="item">
+                                            <h4 class="h5 mb-3 google-font text-white">Address</h4>
+                                            <p class="mb-0 text-white">Millennium Gate Museum<br>395 17th Street NW<br>Atlanta GA 30363</p>
+                                        </div>
+                                        <div class="item">
+                                            <a href="https://maps.app.goo.gl/z662vpJs5HoFixm1A" target="_blank" class="btn-link text-white text-xs text-decoration-underline button-hover">View Map</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-secondary p-4 h-100 d-flex flex-column justify-content-between gap-5 contact-box">
+                                <div class="text-white mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" viewBox="0 0 256 256"><path d="M220.78,162.13,173.56,141A12,12,0,0,0,162.18,142a3.37,3.37,0,0,0-.38.28L137,163.42a3.93,3.93,0,0,1-3.7.21c-16.24-7.84-33.05-24.52-40.89-40.57a3.9,3.9,0,0,1,.18-3.69l21.2-25.21c.1-.12.19-.25.28-.38a12,12,0,0,0,1-11.36L93.9,35.28a12,12,0,0,0-12.48-7.19A52.25,52.25,0,0,0,36,80c0,77.2,62.8,140,140,140a52.25,52.25,0,0,0,51.91-45.42A12,12,0,0,0,220.78,162.13ZM220,173.58A44.23,44.23,0,0,1,176,212C103.22,212,44,152.78,44,80A44.23,44.23,0,0,1,82.42,36a3.87,3.87,0,0,1,.48,0,4,4,0,0,1,3.67,2.49l21.11,47.14a4,4,0,0,1-.23,3.6l-21.19,25.2c-.1.13-.2.25-.29.39a12,12,0,0,0-.78,11.75c8.69,17.79,26.61,35.58,44.6,44.27a12,12,0,0,0,11.79-.87l.37-.28,24.83-21.12a3.93,3.93,0,0,1,3.57-.27l47.21,21.16A4,4,0,0,1,220,173.58Z"></path></svg>
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="item">
+                                            <h4 class="h5 mb-3 google-font text-white">Phone</h4>
+                                            <div class="text-white text-decoration-none h6">404.881.0900</div>
+                                        </div>
+                                        <div class="item">
+                                            <a href="tel:4048810900" class="btn-link text-white text-xs text-decoration-underline button-hover">Call Us</a>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-primary p-4 h-100 d-flex flex-column justify-content-between gap-5 contact-box">
+                                <div class="text-white mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" viewBox="0 0 256 256"><path d="M224.47,31.52a11.87,11.87,0,0,0-11.82-3L20.74,86.67a12,12,0,0,0-1.91,22.38L105,151l41.92,86.15A11.88,11.88,0,0,0,157.74,244c.34,0,.69,0,1,0a11.89,11.89,0,0,0,10.52-8.63l58.21-192,0-.08A11.85,11.85,0,0,0,224.47,31.52Zm-4.62,9.54-58.23,192a4,4,0,0,1-7.48.59l-41.3-84.86,50-50a4,4,0,1,0-5.66-5.66l-50,50-84.9-41.31a3.88,3.88,0,0,1-2.27-4,3.93,3.93,0,0,1,3-3.54L214.9,36.16A3.93,3.93,0,0,1,216,36a4,4,0,0,1,2.79,1.19A3.93,3.93,0,0,1,219.85,41.06Z"></path></svg>
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="item">
+                                            <h4 class="h5 mb-3 google-font text-white">Email</h4>
+                                            <div class="text-white text-decoration-none h6">info@thegatemuseum.org</div>
+                                        </div>
+                                        <div class="item">
+                                            <a href="mailto:info@thegatemuseum.org" class="btn-link text-white text-xs text-decoration-underline button-hover">Mail Us</a>
+                                        </div>
+                                    </div>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section ">
+                <div class="container">
+                    <div class="row justify-content-between">
+
+                        <div class="col-lg-7 mb-5 mb-lg-0">
+                            <h2 class="h3 mb-4">Send us a message</h2>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label class="text-xs text-uppercase fw-bold text-muted mb-2">Your Name</label>
+                                        <input type="text" class="form-control bg-light border-0 p-3"
+                                            placeholder="John Doe">
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label class="text-xs text-uppercase fw-bold text-muted mb-2">Phone
+                                            Number</label>
+                                        <input type="tel" class="form-control bg-light border-0 p-3"
+                                            placeholder="(555) 123-4567">
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="text-xs text-uppercase fw-bold text-muted mb-2">Email Address</label>
+                                    <input type="email" class="form-control bg-light border-0 p-3"
+                                        placeholder="your@email.com">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="text-xs text-uppercase fw-bold text-muted mb-2">Message</label>
+                                    <textarea class="form-control bg-light border-0 p-3" rows="6"
+                                        placeholder="Tell us how we can help you..."></textarea>
+                                </div>
+
+                                
+
+                                <button type="submit" class="btn btn-primary px-5 py-3">Send Message</button>
+                            </form>
+                        </div>
+
+                        <div class="border-end w-auto"></div>
+
+                        <div class="col-lg-4">
+                            <div class="bg-secondary text-white p-5 mb-4">
+                                <h4 class="text-white mb-4">Museum Hours</h4>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span>Tuesday - Saturday</span>
+                                        <span class="fw-bold">10am - 5pm</span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <span>Sunday - Monday</span>
+                                        <span class="fw-bold">Closed</span>
+                                    </div>
+                                </div>
+                                <p class="mb-0 small text-white-50 mt-4">*Exceptions are made for private events</p>
+                            </div>
+
+                            <div class="bg-dark bg-opacity-10 p-5">
+                                <h5 class="mb-3">Plan Your Visit</h5>
+                                <p class="mb-4">We recommend purchasing tickets online before your visit.</p>
+                                <a href="#" class="btn btn-primary w-100">Buy Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="footer">
+    <div class="pre_footer_outer">
+        <div class="container pre_footer_menu">
+            <a href="#">#TheGateMuseum</a>
+            <a href="#">News & Articles</a>
+            <a href="#">Internship Opportunities</a>
+            <a href="#">Volunteer Opportunities</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-4 py-4">
+                <h4 class="text-white mb-2">The Millennium Gate Museum</h4>
+                <p>395 17th St NW Atlanta GA 30363</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="text-white small text-decoration-underline">Buy Tickets</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-white small text-decoration-underline">View in Google Maps</a>
+                </div>
+
+                <div class="newsletter-form mt-5 mb-2">
+                    <h5 class="text-white mb-2 ff-body h6 fw-normal">Subscribe to our newsletter</h5>
+                    <form action="#">
+                        <div class="d-flex input-group">
+                            <input type="email" placeholder="Enter your email" class="form-control form-control-sm">
+                            <button type="submit" class="btn btn-sm btn-primary"><i class="ri-send-plane-fill"></i>
+                                <span class="d-none d-md-inline-block"> Subscribe</span></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-lg-5 offset-lg-3">
+                <div class="row">
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Museum</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Visit</a></li>
+                            <li><a href="#">Exhibitions</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Art</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">Permanent Collection</a></li>
+                            <li><a href="#">Temporary Exhibition</a></li>
+                            <li><a href="#">Period Rooms</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container post_footer">
+        <div class="py-2 text-sm">For facility rentals related inquiries <a href="#">click here</a></div>
+        <div class="social_icons py-2">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-fill"></i></a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright_inner">
+                <ul class="list-inline py-3">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Copyright</a></li>
+                </ul>
+                <div class="py-3">Website by <a href="#">Webmaddy</a></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+<!-- Scripts -->
+<script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>

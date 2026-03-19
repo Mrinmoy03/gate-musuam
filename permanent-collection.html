@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Donate to the Millennium Gate Museum in Atlanta, Georgia">
+<meta name="keywords" content="bootstrap, gulp, sass, modern web design">
+<title>Donate - The Gate Museum</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+    <div>
+        <div class="page-reveal-transition">
+    <!-- this reveals after curtain reveals. it will be below the curtains -->
+    <div class="page-reveal-background"></div>
+
+    <!-- curtain reveal one by one, starting from 4th, then 3 and 5, then 2 and 6, then 1 and 7th -->
+    <div class="curtain">
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+    </div>
+    <div class="content-area">
+        <div class="mask">
+            <h5>Inspiring the future</h5>
+        </div>
+        <div class="loader-progress">
+            <div class="loader-line"></div>
+        </div>
+        <div class="loader-percentage">0%</div>
+    </div>
+</div>
+<div class="main-navigation fixed-top">
+    <div class="container-fluid">
+        <div class="navigation_inner">
+            <a href="index.html" class="brand_logo">
+                <img src="images/logo.svg" alt="The Gate Museum" class="brand_logo_image img-fluid">
+            </a>
+            <div class="navigation_menu ms-auto">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="buy-tickets.html">Tickets</a></li>
+                    <li><a href="facility-rental.html">Facility Rentals</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="humburger_menu">
+                <span>Menu</span>
+                <div class="humburger_icon">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="menu-overlay-bg"></div>
+<div class="offcanvas-menu-main">
+    <div class="bg-menu-overlay"></div>
+    <div class="close-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+            <path
+                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
+            </path>
+        </svg>
+    </div>
+    <div class="offcanvas-menu-inner">
+        <div class="top-grid-item">
+            <ul class="main-menu-items">
+                <li><span class="menu-title">The Museum</span>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li><span class="menu-title">The Art</span>
+                    <ul>
+                        <li><a href="collection.html">Permanent Collection</a></li>
+                        <li><a href="exhibitions.html">Temporary Exhibition</a></li>
+                        <li><a href="period-rooms.html">Period Rooms</a></li>
+                        <li><a href="statues-and-monuments.html">Statues & Monnuments</a></li>
+                        <li><a href="traveling-exhibitions.html">Travelling Exhibitions</a></li>
+                    </ul>
+                </li>
+                <li><a href="support.html">Support & Learn</a></li>
+                <li><a href="millennium-candler-gala.html">Candler Prize</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+        <main>
+            <section class="collection-hero section">
+                <div class="container mt-5">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-12">
+                            <div class="pre_title mb-2">Collections<span class="line"></span></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="h1">Collections Highlights</h1>
+
+                        </div>
+                        <div class="col-lg-5">
+                            <p class="text-lg">The Millennium Gate Museum is the most comprehensive museum of Georgia
+                                history in the state. Our collections cover Georgia's history from pre-Columbian era up
+                                until the present day.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="collection-section featured-collection-v3 section pt-0" id="georgia-history">
+                <div class="container">
+                    <div class="featured-v3-inner">
+                        <div class="featured-v3-content">
+                            <div class="pre_title mb-2">Permanent Exhibition</div>
+                            <h2 class="h3 mb-3">Georgia History</h2>
+                            <p class="description-text">Beginning with pre-Columbian Native American history and
+                                16th-century Spanish settlement of the coast, the Georgia Pioneer Gallery focuses on
+                                General Oglethorpe’s creation of the Colony of Georgia and the enlightenment ideals that
+                                were so instrumental in its inception. The gallery contains documents and historical
+                                artifacts from the Native Indian, Spanish, British Colonial, and American Revolutionary
+                                periods. The exhibit also features photographs and artifacts from twenty of Atlanta’s
+                                pioneering families, such as Adair, Candler, Glenn, Herndon, Rich, Woodruff, and many
+                                others who have helped shape our social, economic, and political, and philanthropic
+                                landscape.</p>
+                        </div>
+                        <div class="featured-v3-image-box">
+                            <div class="image-reveal-wrapper reveal-item">
+                                <img src="https://placehold.co/1200x800/184137/f1ecda?text= " alt="Georgia History"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="collection-section featured-collection-v3 section alternate-bg layout-swapped"
+                id="bodmer-hanna-intro">
+                <div class="container">
+                    <div class="featured-v3-inner">
+                        <div class="featured-v3-content">
+                            <div class="pre_title mb-2">Permanent Exhibition</div>
+                            <h2 class="h3 mb-3">Bodmer-Hanna Gallery</h2>
+                            <p class="description-text">Georgia native Frank Hanna III rescued the 53-leaf Bodmer Papyri
+                                (now called the Bodmer-Hanna Papyri by the Vatican), which contain the oldest known
+                                written texts of the Gospels of Luke and John, from probable destruction. Discovered
+                                near Egypt’s Valley of the Kings in the Nile River Valley, these papyri, which predate
+                                the Codex Vaticanus, the oldest known Bible, by up to 150 years, revolutionized our
+                                understanding of early Christian writings. The first page of the Gospel of John (right)
+                                contains the earliest known Lord’s Prayer. The Sally and Frank Hanna Foundation donated
+                                the documents to the Vatican Apostolic Library and Pope Benedict XVI in 2007. Two leaves
+                                are on display at the Millennium Gate Museum, where we have educated over a million
+                                visitors in nearly ten years.</p>
+                        </div>
+                        <div class="featured-v3-image-box">
+                            <div class="image-reveal-wrapper reveal-item">
+                                <img src="https://placehold.co/1200x800/184137/f1ecda?text= " alt="Bodmer-Hanna Papyri"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="collection-section collection-grid-v2 section" id="pre-columbian">
+                <div class="container">
+                    <div class="row mt-lg-4">
+                        <div class="col-lg-3 mb-5 mb-lg-0">
+                            <h3 class="section-title-v2 h3">Pre <br>
+                                Columbian Georgia</h3>
+
+                            <a href="pre-columbian-georgia.html" class="cta-badge-wrapper">
+                                <svg class="cta-text-svg" viewBox="0 0 100 100">
+                                    <path id="circlePathPC" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                                        fill="transparent" />
+                                    <text>
+                                        <textPath xlink:href="#circlePathPC">
+                                            Click to View All Collection • Click to View All Collection •
+                                        </textPath>
+                                    </text>
+                                </svg>
+                                <div class="cta-badge-circle">
+                                    <img src="images/arrow-white.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row g-4 pswp-gallery">
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-psp-width="1200" data-psp-height="1200"
+                                                data-description="This intricately crafted pottery vessel dates back to the Mississippian period (800-1600 CE). The geometric patterns and effigy designs represent the sophisticated ceramic traditions of Pre-Columbian Native American cultures in Georgia."
+                                                target="_blank" class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="Native American pottery" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">Native American pottery</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-fancybox="collection"
+                                                data-caption="A beautifully preserved ceremonial bowl featuring distinctive stamped patterns. These vessels were used in daily life and special rituals by the indigenous peoples who inhabited Georgia's river valleys centuries before European contact."
+                                                class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="Native American pottery" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">Native American pottery</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-fancybox="collection"
+                                                data-caption="This rare artifact showcases the advanced pottery techniques developed by Native American artisans. The burnished surface and intricate incised decorations demonstrate the high level of craftsmanship achieved in Pre-Columbian Georgia."
+                                                class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="Native American pottery" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">Native American pottery</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="collection-section collection-grid-v2 section" id="18th-century">
+                <div class="container">
+                    <div class="row mt-lg-4">
+                        <div class="col-lg-3 mb-5 mb-lg-0">
+                            <h3 class="section-title-v2 h3">18th <br> Century Georgia</h3>
+
+                            <a href="#18th-century" class="cta-badge-wrapper">
+                                <svg class="cta-text-svg" viewBox="0 0 100 100">
+                                    <path id="circlePath18" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                                        fill="transparent" />
+                                    <text>
+                                        <textPath xlink:href="#circlePath18">
+                                            Click to View All Collection • Click to View All Collection •
+                                        </textPath>
+                                    </text>
+                                </svg>
+                                <div class="cta-badge-circle">
+                                    <img src="images/arrow-white.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row g-4 pswp-gallery">
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-pswp-width="1200" data-pswp-height="1200"
+                                                data-description="This rare 18th-century engraving depicts General James Oglethorpe, founder of the Georgia Colony in 1733. Oglethorpe's vision for Georgia as a colony of opportunity for debtors and a buffer against Spanish Florida shaped the state's early history and philanthropic character."
+                                                target="_blank" class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="General James Oglethorpe" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">Rare engraving of General James Oglethorpe</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-fancybox="collection"
+                                                data-caption="An exquisite example of 18th-century European porcelain that found its way to colonial Georgia. Such fine china was a mark of status and refinement among the colonial elite, representing the transatlantic trade networks that connected Georgia to Europe."
+                                                class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="Porcelain plate" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">Porcelain plate</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-fancybox="collection"
+                                                data-caption="A first edition of Robert Castell's 'Villas of the Ancients Illustrated' (1728), which profoundly influenced Oglethorpe's urban planning for Savannah. Castell, Oglethorpe's friend, died in debtors' prison, inspiring Oglethorpe's founding of Georgia as a haven for the financially unfortunate."
+                                                class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="Villa of the Ancients" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">Rare book, Robert Castell’s Villa of the Ancients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="collection-section collection-grid-v2 section alternate-bg" id="19th-century">
+                <div class="container">
+                    <div class="row mt-lg-4">
+                        <div class="col-lg-3 mb-5 mb-lg-0">
+                            <h3 class="section-title-v2 h3">19th <br> Century Georgia</h3>
+
+                            <a href="#19th-century" class="cta-badge-wrapper">
+                                <svg class="cta-text-svg" viewBox="0 0 100 100">
+                                    <path id="circlePath19" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                                        fill="transparent" />
+                                    <text>
+                                        <textPath xlink:href="#circlePath19">
+                                            Click to View All Collection • Click to View All Collection •
+                                        </textPath>
+                                    </text>
+                                </svg>
+                                <div class="cta-badge-circle">
+                                    <img src="images/arrow-white.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row g-4 pswp-gallery">
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-pswp-width="1200" data-pswp-height="1200"
+                                                data-description="A delicate piece of 19th-century porcelain reflecting the refined tastes of Atlanta's emerging upper class during the city's reconstruction era. Such items were treasured possessions in Georgia households recovering from the Civil War."
+                                                target="_blank" class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="Porcelain plate" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">Porcelain plate</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-fancybox="collection"
+                                                data-caption="An original spike from the Georgia Railroad, one of the state's first railroads chartered in 1833. The railroad connected Augusta to Atlanta and played a crucial role in Georgia's economic development and its strategic importance during the Civil War."
+                                                class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="Railroad line" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">Spike from the Georgia Railroad line</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-fancybox="collection"
+                                                data-caption="This uniform cap belonged to the Gate City Guard, Atlanta's oldest military organization founded in 1858. The Guard participated in both the Civil War and Spanish-American War, representing Atlanta's proud military heritage and civic defense tradition."
+                                                class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="Uniform cap" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">Gate City Guard uniform cap.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="collection-section collection-grid-v2 section" id="20th-century">
+                <div class="container">
+                    <div class="row mt-lg-4">
+                        <div class="col-lg-3 mb-5 mb-lg-0">
+                            <h3 class="section-title-v2 h3">20th <br> Century Georgia</h3>
+
+                            <a href="#20th-century" class="cta-badge-wrapper">
+                                <svg class="cta-text-svg" viewBox="0 0 100 100">
+                                    <path id="circlePath20" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                                        fill="transparent" />
+                                    <text>
+                                        <textPath xlink:href="#circlePath20">
+                                            Click to View All Collection • Click to View All Collection •
+                                        </textPath>
+                                    </text>
+                                </svg>
+                                <div class="cta-badge-circle">
+                                    <img src="images/arrow-white.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row g-4 pswp-gallery">
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-pswp-width="1200" data-pswp-height="1200"
+                                                data-description="A Corona typewriter from the Atlantic Steel office of Thomas K. Glenn, Atlanta's pioneering industrialist. Atlantic Steel was instrumental in Atlanta's rise as a major industrial center in the early 20th century, symbolizing the New South's economic transformation."
+                                                target="_blank" class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="Typewriter" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">Corona typewriter from the Atlantic Steel office of
+                                            Thomas K. Glenn.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-pswp-width="1200" data-pswp-height="1200"
+                                                data-description="An original 20th-century Girl Scouts uniform, representing the organization's history in Georgia. Juliette Gordon Low founded the Girl Scouts in Savannah in 1912, starting a movement that has empowered millions of young women."
+                                                target="_blank" class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="GS uniform" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">Antique Girl Scouts of the U.S.A. uniform.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-pswp-width="1200" data-pswp-height="1200"
+                                                data-description="John Goddard, a prominent figure in 20th-century Georgia history, seen here driving a carriage. This photograph captures the transition between traditional and modern modes of transportation in early 20th-century Atlanta."
+                                                target="_blank" class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="John Goddard" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">John Goddard driving a carriage</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="collection-section collection-grid-v2 section alternate-bg" id="bodmer-hanna-grid">
+                <div class="container">
+                    <div class="row mt-lg-4">
+                        <div class="col-lg-3 mb-5 mb-lg-0">
+                            <h3 class="section-title-v2 h3">Bodmer-Hanna<br>Gallery</h3>
+
+                            <a href="#bodmer-hanna" class="cta-badge-wrapper">
+                                <svg class="cta-text-svg" viewBox="0 0 100 100">
+                                    <path id="circlePathBH" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                                        fill="transparent" />
+                                    <text>
+                                        <textPath xlink:href="#circlePathBH">
+                                            Click to View All Collection • Click to View All Collection •
+                                        </textPath>
+                                    </text>
+                                </svg>
+                                <div class="cta-badge-circle">
+                                    <img src="images/arrow-white.svg" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row g-4 pswp-gallery">
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1000/184137/f1ecda?text= "
+                                                data-pswp-width="1200" data-pswp-height="1000"
+                                                data-description="The Bodmer-Hanna Papyri XIV and XV are among the oldest and most significant records of the Gospels of Luke and John. Dating from the late 2nd or early 3rd century, these manuscripts provide vital insights into early Christian history."
+                                                target="_blank" class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="Papyri" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">The Bodmer-Hanna Papyri XIV and XV</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1000/184137/f1ecda?text= "
+                                                data-pswp-width="1200" data-pswp-height="1000"
+                                                data-description="A fragment of an Egyptian Coptic textile, showcasing the intricate weaving and dyeing techniques of early Christian Egypt. These textiles offer a glimpse into the everyday life and artistic expression of Coptic communities."
+                                                target="_blank" class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="Textile fragment" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">An Egyptian Coptic textile fragment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="collection-section collection-grid-v2 section mb-0" id="statues">
+                <div class="container">
+                    <div class="row mt-lg-4">
+                        <div class="col-lg-3 mb-5 mb-lg-0">
+                            <h3 class="section-title-v2 h3">Statues and<br>Monuments</h3>
+
+                            <a href="#statues" class="cta-badge-wrapper">
+                                <svg class="cta-text-svg" viewBox="0 0 100 100">
+                                    <path id="circlePathST" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                                        fill="transparent" />
+                                    <text>
+                                        <textPath xlink:href="#circlePathST">
+                                            Click to View All Collection • Click to View All Collection •
+                                        </textPath>
+                                    </text>
+                                </svg>
+                                <div class="cta-badge-circle">
+                                    <img src="images/arrow-white.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row g-4 pswp-gallery">
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-pswp-width="1200" data-pswp-height="1200"
+                                                data-description="A reproduction of the Statue of Zeus at Olympia, one of the Seven Wonders of the Ancient World. Created by the sculptor Phidias in the 5th century BCE, the original gold and ivory statue commemorated the king of the gods."
+                                                target="_blank" class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= " alt="Zeus"
+                                                    class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">The Statue of Zeus at Olympia</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-pswp-width="1200" data-pswp-height="1200"
+                                                data-description="Chief Tomochichi of the Yamacraw Tribe, who befriended James Oglethorpe and played a pivotal role in the peaceful founding of the Georgia Colony. His diplomacy ensured the survival of the early settlers."
+                                                target="_blank" class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="Chief Tomochichi" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">Chief Tomochichi of the Yamacraw Tribe.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 reveal-item">
+                                    <div class="collection-card-v2">
+                                        <div class="card-image-wrapper">
+                                            <a href="https://placehold.co/1200x1200/184137/f1ecda?text= "
+                                                data-pswp-width="1200" data-pswp-height="1200"
+                                                data-description="The Peace and Justice Gate at Atlantic Station, modeled after classical triumphal arches. It serves as a symbolic entrance to the Millennium Gate Museum complex, celebrating Georgia's heritage."
+                                                target="_blank" class="pswp-link">
+                                                <img src="https://placehold.co/600x600/184137/f1ecda?text= "
+                                                    alt="Peace Gate" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <p class="card-caption">Peace and Justice Gate</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="footer">
+    <div class="pre_footer_outer">
+        <div class="container pre_footer_menu">
+            <a href="#">#TheGateMuseum</a>
+            <a href="#">News & Articles</a>
+            <a href="#">Internship Opportunities</a>
+            <a href="#">Volunteer Opportunities</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-4 py-4">
+                <h4 class="text-white mb-2">The Millennium Gate Museum</h4>
+                <p>395 17th St NW Atlanta GA 30363</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="text-white small text-decoration-underline">Buy Tickets</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-white small text-decoration-underline">View in Google Maps</a>
+                </div>
+
+                <div class="newsletter-form mt-5 mb-2">
+                    <h5 class="text-white mb-2 ff-body h6 fw-normal">Subscribe to our newsletter</h5>
+                    <form action="#">
+                        <div class="d-flex input-group">
+                            <input type="email" placeholder="Enter your email" class="form-control form-control-sm">
+                            <button type="submit" class="btn btn-sm btn-primary"><i class="ri-send-plane-fill"></i>
+                                <span class="d-none d-md-inline-block"> Subscribe</span></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-lg-5 offset-lg-3">
+                <div class="row">
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Museum</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Visit</a></li>
+                            <li><a href="#">Exhibitions</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Art</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">Permanent Collection</a></li>
+                            <li><a href="#">Temporary Exhibition</a></li>
+                            <li><a href="#">Period Rooms</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container post_footer">
+        <div class="py-2 text-sm">For facility rentals related inquiries <a href="#">click here</a></div>
+        <div class="social_icons py-2">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-fill"></i></a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright_inner">
+                <ul class="list-inline py-3">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Copyright</a></li>
+                </ul>
+                <div class="py-3">Website by <a href="#">Webmaddy</a></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+<!-- Scripts -->
+<script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>

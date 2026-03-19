@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Host your event at the Millennium Gate Museum, Atlanta's premier classical venue.">
+<meta name="keywords" content="bootstrap, gulp, sass, modern web design">
+<title>Event Rental - The Gate Museum</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- Fancybox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.10/dist/fancybox/fancybox.css">
+
+
+<!-- Isotope -->
+<script src="https://cdn.jsdelivr.net/npm/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <div class="page-reveal-transition">
+    <!-- this reveals after curtain reveals. it will be below the curtains -->
+    <div class="page-reveal-background"></div>
+
+    <!-- curtain reveal one by one, starting from 4th, then 3 and 5, then 2 and 6, then 1 and 7th -->
+    <div class="curtain">
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+        <div class="curtain-column"></div>
+    </div>
+    <div class="content-area">
+        <div class="mask">
+            <h5>Inspiring the future</h5>
+        </div>
+        <div class="loader-progress">
+            <div class="loader-line"></div>
+        </div>
+        <div class="loader-percentage">0%</div>
+    </div>
+</div>
+<div class="main-navigation fixed-top">
+    <div class="container-fluid">
+        <div class="navigation_inner">
+            <a href="index.html" class="brand_logo">
+                <img src="images/logo.svg" alt="The Gate Museum" class="brand_logo_image img-fluid">
+            </a>
+            <div class="navigation_menu ms-auto">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="buy-tickets.html">Tickets</a></li>
+                    <li><a href="facility-rental.html">Facility Rentals</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="humburger_menu">
+                <span>Menu</span>
+                <div class="humburger_icon">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="menu-overlay-bg"></div>
+<div class="offcanvas-menu-main">
+    <div class="bg-menu-overlay"></div>
+    <div class="close-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+            <path
+                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
+            </path>
+        </svg>
+    </div>
+    <div class="offcanvas-menu-inner">
+        <div class="top-grid-item">
+            <ul class="main-menu-items">
+                <li><span class="menu-title">The Museum</span>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li><span class="menu-title">The Art</span>
+                    <ul>
+                        <li><a href="collection.html">Permanent Collection</a></li>
+                        <li><a href="exhibitions.html">Temporary Exhibition</a></li>
+                        <li><a href="period-rooms.html">Period Rooms</a></li>
+                        <li><a href="statues-and-monuments.html">Statues & Monnuments</a></li>
+                        <li><a href="traveling-exhibitions.html">Travelling Exhibitions</a></li>
+                    </ul>
+                </li>
+                <li><a href="support.html">Support & Learn</a></li>
+                <li><a href="millennium-candler-gala.html">Candler Prize</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+        <main>
+            <!-- ── Hero Section (Matching about.html) ────────── -->
+            <div class="page_hero pb-4">
+                <div class="container mt-5">
+                    <div class="row justify-content-between align-items-end">
+                        <div class="col-lg-6">
+                            <h1 class="pre_title ff-body fw-normal mb-3">Event Rental <span class="line"></span></h1>
+                            <h2 class="h2">Elegance in Every Detail</h2>
+                        </div>
+                        <div class="col-lg-5">
+                            <p class="text-md mb-0">Designed in the tradition of classical Roman triumphal arches, the
+                                Millennium Gate Museum offers an elegant atmosphere in an extraordinary setting for your
+                                most significant moments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Intro Section ──────────────────────────────── -->
+            <section class="section ">
+                <div class="container mt-lg-5">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-5" data-aos="fade-up">
+                            <h2 class="h2 mb-4">A Memorable Backdrop</h2>
+                            <p class="text-lg mb-4">The Museum provides its guests an artistic and memorable backdrop
+                                for receptions, rehearsal dinners, Bar and Bat Mitzvah celebrations, corporate meetings,
+                                and other customized presentations or events.</p>
+                            <p class="mb-4">Event staff will help you choose which of our event rental packages will
+                                best accommodate your needs.</p>
+
+                            <div class="my-lg-5 p-4 border bg-secondary my-3">
+                                <p class="mb-1 small text-uppercase ls-1 fw-bold text-white">Inquiries</p>
+                                <p class="mb-0 text-white">Contact Crystal Love at <br>
+                                    <a href="mailto:events@thegatemuseum.org"
+                                        class="h5 text-primary text-decoration-underline">events@thegatemuseum.org</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                            <div class="position-relative">
+                                <img src="images/facility-1.jpg" alt="Event Rental Intro"
+                                    class="img-fluid w-100 border-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── Event Spaces Grid ─────────────────────────── -->
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div class="pre_title mb-2">Venues <span class="line"></span></div>
+                            <h2 class="h2">Our Event Spaces</h2>
+                        </div>
+                        <div class="col-lg-5 offset-lg-1" data-aos="fade-left">
+                            <p class="text-md">From intimate photo shoots to grand galas for up to 450 guests, our
+                                versatile spaces adapt to your vision.</p>
+                            <a href="#" target="_blank" class="btn btn-primary mt-3">Book your event now</a>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 mt-2">
+                        <!-- Oval Lawn -->
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                            <div class="event-space-box">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="images/overlawn-1.jpg" data-fancybox="venues"
+                                        data-caption="Oval Lawn (Outside) – 3,000 Sq. Ft. | Up to 450 Guests">
+                                        <img src="images/overlawn.jpg" alt="Oval Lawn" class="img-fluid w-100">
+                                        <div class="event-space-overlay">
+                                            <img src="images/eye-icon.svg" alt="Details">
+                                            <div class="h5 mb-2 fs-6">3,000 Sq. Feet</div>
+                                            <div class="h5 fs-6">Up to 450 Guests</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-4 text-center">
+                                    <h5 class="mb-0 fs-6">Oval Lawn (Outside)</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Under The Arch -->
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="event-space-box">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="images/arch-1.jpg" data-fancybox="venues"
+                                        data-caption="Under The Arch Terrace – 1,300 Sq. Ft. | Up to 150 Guests">
+                                        <img src="images/arch.jpg" alt="Under The Arch" class="img-fluid w-100">
+                                        <div class="event-space-overlay">
+                                            <img src="images/eye-icon.svg" alt="Details">
+                                            <div class="h5 mb-2 fs-6">1,300 Sq. Feet</div>
+                                            <div class="h5 fs-6">Up to 150 Guests</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-4 text-center">
+                                    <h5 class="mb-0 fs-6">Under The Arch Terrace</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Interior Galleries -->
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="event-space-box">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="images/interrior-1.jpg" data-fancybox="venues"
+                                        data-caption="Interior Galleries (1st Floor) – 2,050 Sq. Ft. | Up to 150 Guests">
+                                        <img src="images/interrior.jpg" alt="Interior Galleries"
+                                            class="img-fluid w-100">
+                                        <div class="event-space-overlay">
+                                            <img src="images/eye-icon.svg" alt="Details">
+                                            <div class="h5 mb-2 fs-6">2,050 Sq. Feet</div>
+                                            <div class="h5 fs-6">Up to 150 Guests</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-4 text-center">
+                                    <h5 class="mb-0 fs-6">Interior Galleries (1st Floor)</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Rhodes Room -->
+                        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="event-space-box">
+                                <div class="position-relative overflow-hidden" style="max-height: 400px;">
+                                    <a href="images/robinson-1.jpg" data-fancybox="venues"
+                                        data-caption="Rhodes-Robinson Room (5th Floor) – 680 Sq. Ft. | Up to 40 Guests">
+                                        <img src="images/robinson.jpg" alt="Rhodes Room"
+                                            class="img-fluid w-100 object-fit-cover">
+                                        <div class="event-space-overlay">
+                                            <img src="images/eye-icon.svg" alt="Details">
+                                            <div class="h5 mb-2 fs-6">680 Sq. Feet</div>
+                                            <div class="h5 fs-6">Up to 40 Guests</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-4 text-center">
+                                    <h5 class="mb-0 fs-6">Rhodes-Robinson Room (5th Floor)</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Rooftop -->
+                        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="event-space-box">
+                                <div class="position-relative overflow-hidden" style="max-height: 400px;">
+                                    <a href="images/roof-top-1.jpg" data-fancybox="venues"
+                                        data-caption="The Rooftop at the Gate (6th Floor) – 650 Sq. Ft. | Up to 40 Guests">
+                                        <img src="images/roof-top.jpg" alt="Rooftop"
+                                            class="img-fluid w-100 object-fit-cover">
+                                        <div class="event-space-overlay">
+                                            <img src="images/eye-icon.svg" alt="Details">
+                                            <div class="h5 mb-2 fs-6">650 Sq. Feet</div>
+                                            <div class="h5 fs-6">Up to 40 Guests</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-4 text-center">
+                                    <h5 class="mb-0 fs-6">The Rooftop at the Gate (6th Floor)</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── Facility Layout Section ───────────────────── -->
+            <section class="section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                            <div class="pre_title mb-2">Downloads <span class="line"></span></div>
+                            <h2 class="h2">Facility Layout</h2>
+                            <p class="text-md mt-4">Download comprehensive PDF floor plans for better event logistics
+                                and spatial planning.</p>
+                            <a href="#" class="btn btn-outline-secondary mt-3">Request
+                                Custom Layout</a>
+                        </div>
+                        <div class="col-lg-6 offset-lg-1">
+                            <div class="row g-4">
+                                <div class="col-md-6" data-aos="zoom-in">
+                                    <a href="#" target="_blank" class="link-card-square">
+                                        <i class="ri-file-pdf-line"></i>
+                                        <span class="small fw-bold text-uppercase ls-1">First Floor <br> Galleries
+                                            Layout</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                                    <a href="#" target="_blank" class="link-card-square">
+                                        <i class="ri-file-pdf-line"></i>
+                                        <span class="small fw-bold text-uppercase ls-1">First Floor <br> Oval Lawn
+                                            Layout</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                                    <a href="#" target="_blank" class="link-card-square">
+                                        <i class="ri-file-pdf-line"></i>
+                                        <span class="small fw-bold text-uppercase ls-1">Under The Arch <br> Terrace
+                                            Layout</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                                    <a href="#" target="_blank" class="link-card-square">
+                                        <i class="ri-file-pdf-line"></i>
+                                        <span class="small fw-bold text-uppercase ls-1">5th & 6th Floor <br>
+                                            Layouts</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section section-secondary">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-5" data-aos="fade-right">
+                            <div class="pre_title mb-2">Catering <span class="line"></span></div>
+                            <h2 class="h2 text-white mb-4">Food and Beverages</h2>
+                            <p class="text-md opacity-75 mb-4">Select a caterer from a list of Atlanta’s finest chefs
+                                and event professionals. Alcohol is permitted and must be provided by the event host,
+                                with bartending services handled by your chosen caterer.</p>
+                            <p class="small opacity-50 mb-4">Note: Outside caterers require a $750 fee and manual
+                                approval. restaurants are not considered caterers.</p>
+                            <a href="#" target="_blank" class="btn btn-primary">View Preferred Caterers</a>
+                        </div>
+                        <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <img src="images/food1.jpg" alt="Culinary" class="img-fluid w-100 border-0">
+                                </div>
+                                <div class="col-6">
+                                    <img src="images/food2.jpg" alt="Dining" class="img-fluid w-100 mt-5 border-0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── Filming Section ───────────────────────────── -->
+            <section class="section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 order-lg-2 offset-lg-1" data-aos="fade-left">
+                            <div class="pre_title mb-2">Productions <span class="line"></span></div>
+                            <h2 class="h2">Filming & Photography</h2>
+                            <p class="text-md mb-4">The Millennium Gate Museum is the perfect location for your film,
+                                commercial, and TV productions. Rates begin at $6,000 per day.</p>
+                            <p class="text-md mb-0">We also welcome proms, engagements, and family shoots starting at
+                                $100/hr. Proposals start at $500.</p>
+                        </div>
+                        <div class="col-lg-6 order-lg-1 mt-5 mt-lg-0" data-aos="fade-right">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-7">
+                                    <img src="images/filming1.jpg" alt="Filming Location" class="img-fluid border-0">
+                                </div>
+                                <div class="col-5">
+                                    <img src="images/filming2.jpg" alt="Filming Scene" class="img-fluid border-0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── Tiers / Planning Section ─────────────────── -->
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row justify-content-center text-center mb-5">
+                        <div class="col-lg-8" data-aos="fade-up">
+                            <div class="pre_title mb-2"><span class="line"></span> Planning <span class="line"></span>
+                            </div>
+                            <h2 class="h2 mb-4">Event Collections</h2>
+                            <p class="text-md mb-0">What’s your event going to look like this year? From petite
+                                gatherings to grande galas, we have the perfect setting.</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 mt-2">
+                        <div class="col-lg-4" data-aos="fade-up">
+                            <div class="p-4 bg-white h-100">
+                                <h4 class="h5 mb-3 fw-bold">Petite</h4>
+                                <p class="small text-muted mb-4">Perfect for intimate social gatherings and small
+                                    corporate sessions.</p>
+                                <img src="images/small-event.jpg" alt="Petite" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="p-4 bg-white h-100">
+                                <h4 class="h5 mb-3 fw-bold">Moyenne</h4>
+                                <p class="small text-muted mb-4">Ideal for medium-sized celebrations and professional
+                                    presentations.</p>
+                                <img src="images/medium-event.jpg" alt="Moyenne" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="p-4 bg-white h-100">
+                                <h4 class="h5 mb-3 fw-bold">Grande</h4>
+                                <p class="small text-muted mb-4">Designed for grand galas, weddings, and large-scale
+                                    corporate events.</p>
+                                <img src="images/large-event.jpg" alt="Grande" class="img-fluid w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="row align-items-end mb-5">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <div class="pre_title mb-2">Galleries <span class="line"></span></div>
+                            <h2 class="h2">Explore Our Spaces</h2>
+                        </div>
+                    </div>
+
+                    <!-- Isotope Grid -->
+                    <div class="isotope-grid" id="gallery-grid">
+                        <!-- Item 1 – landscape -->
+                        <div class="isotope-item">
+                            <a href="images/gallery/1.jpg" data-fancybox="gallery" data-caption="Oval Lawn">
+                                <img src="images/gallery/1.jpg" alt="Oval Lawn" class="img-fluid w-100">
+                            </a>
+                        </div>
+                        <!-- Item 2 – portrait -->
+                        <div class="isotope-item">
+                            <a href="images/gallery/2.jpg" data-fancybox="gallery"
+                                data-caption="Under the Arch Terrace">
+                                <img src="images/gallery/2.jpg" alt="Under the Arch Terrace" class="img-fluid w-100">
+                            </a>
+                        </div>
+                        <!-- Item 3 – landscape -->
+                        <div class="isotope-item">
+                            <a href="images/gallery/3.jpg" data-fancybox="gallery" data-caption="Interior Galleries">
+                                <img src="images/gallery/3.jpg" alt="Interior Galleries" class="img-fluid w-100">
+                            </a>
+                        </div>
+                        <!-- Item 4 – landscape -->
+                        <div class="isotope-item">
+                            <a href="images/gallery/4.jpg" data-fancybox="gallery" data-caption="Rhodes-Robinson Room">
+                                <img src="images/gallery/4.jpg" alt="Rhodes-Robinson Room" class="img-fluid w-100">
+                            </a>
+                        </div>
+                        <!-- Item 5 – portrait -->
+                        <div class="isotope-item">
+                            <a href="images/gallery/5.jpg" data-fancybox="gallery" data-caption="The Rooftop">
+                                <img src="images/gallery/5.jpg" alt="The Rooftop" class="img-fluid w-100">
+                            </a>
+                        </div>
+                        <!-- Item 6 – landscape -->
+                        <div class="isotope-item">
+                            <a href="images/gallery/6.jpg" data-fancybox="gallery" data-caption="Event Night">
+                                <img src="images/gallery/6.jpg" alt="Event Night" class="img-fluid w-100">
+                            </a>
+                        </div>
+                        <!-- <div class="isotope-item">
+                            <a href="images/gallery/7.jpg" data-fancybox="gallery" data-caption="Event Night">
+                                <img src="images/gallery/7.jpg" alt="Event Night" class="img-fluid w-100">
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── FAQ & CTA ────────────────────────────────── -->
+            <section class="section bg-secondary">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center text-center">
+                        <div class="col-lg-8" data-aos="fade-up">
+                            <div class="pre_title text-white mb-3"><span class="line bg-white opacity-50"></span> Plan
+                                Your Event <span class="line bg-white opacity-50"></span></div>
+                            <h2 class="h2 text-white mb-4">Ready to plan your memorable day?</h2>
+                            <p class="text-white opacity-75 mb-5">Whether you're hosting an intimate gathering or a
+                                grand celebration, our team is here to bring your vision to life.</p>
+                            <div class="d-flex flex-wrap justify-content-center gap-3">
+                                <a href="#" target="_blank" class="btn btn-primary px-5">Inquire Now</a>
+                                <a href="#" class="btn btn-outline-light px-5">View
+                                    FAQ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ── Galleries Section (V12 - Isotope Masonry + Fancybox) ── -->
+
+        </main>
+
+        <div class="footer">
+    <div class="pre_footer_outer">
+        <div class="container pre_footer_menu">
+            <a href="#">#TheGateMuseum</a>
+            <a href="#">News & Articles</a>
+            <a href="#">Internship Opportunities</a>
+            <a href="#">Volunteer Opportunities</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-4 py-4">
+                <h4 class="text-white mb-2">The Millennium Gate Museum</h4>
+                <p>395 17th St NW Atlanta GA 30363</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="text-white small text-decoration-underline">Buy Tickets</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-white small text-decoration-underline">View in Google Maps</a>
+                </div>
+
+                <div class="newsletter-form mt-5 mb-2">
+                    <h5 class="text-white mb-2 ff-body h6 fw-normal">Subscribe to our newsletter</h5>
+                    <form action="#">
+                        <div class="d-flex input-group">
+                            <input type="email" placeholder="Enter your email" class="form-control form-control-sm">
+                            <button type="submit" class="btn btn-sm btn-primary"><i class="ri-send-plane-fill"></i>
+                                <span class="d-none d-md-inline-block"> Subscribe</span></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-lg-5 offset-lg-3">
+                <div class="row">
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Museum</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Visit</a></li>
+                            <li><a href="#">Exhibitions</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 py-4">
+                        <h5 class="h6 text-white mb-3">The Art</h5>
+                        <ul class="footer_menu">
+                            <li><a href="#">Permanent Collection</a></li>
+                            <li><a href="#">Temporary Exhibition</a></li>
+                            <li><a href="#">Period Rooms</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container post_footer">
+        <div class="py-2 text-sm">For facility rentals related inquiries <a href="#">click here</a></div>
+        <div class="social_icons py-2">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-fill"></i></a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright_inner">
+                <ul class="list-inline py-3">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Copyright</a></li>
+                </ul>
+                <div class="py-3">Website by <a href="#">Webmaddy</a></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+<!-- Scripts -->
+<script src="js/main.js"></script>
+    </div>
+
+</body>
+
+</html>
